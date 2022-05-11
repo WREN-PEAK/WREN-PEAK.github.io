@@ -6,23 +6,50 @@
         #secondList1 {
           color: #F13392;
           text-decoration: none;
+          font-family: Verdana, sans-serif;
         }
         #secondList2 {
           color: #003392;
           text-decoration: none;
+          font-family: Times, serif;
         }
         #secondList3 {
           color: #009992;
           text-decoration: none;
+          font-family: fantasy;
         }
         #secondList4 {
           color: #BBA945;
           text-decoration: none;
+          font-family: Helvetica, sans-serif;
         }
         #squareBullets {
           list-style-type: square;
         }
-
+/* This pertains to my third list */
+        nav ul {
+          background-color: #161032;
+          list-style-type: none;
+          color: white
+          margin: 0px;
+          padding: 100px 0px 0px 0px;
+        }
+        nav ul li {
+          background-color: #161032;
+          display: inline-block;
+          padding: 12px 24px;
+        }
+        nav ul li:hover {
+          background-color: darkgray;
+          color: white;
+        }
+        nav ul li:active {
+          background-color: skyblue;
+          color: #161032;
+        }
+        ul span {
+          color: lightgray
+        }
     </style>
   </head>
   <body>
@@ -41,12 +68,15 @@
       <li><a id="secondList4" href="#">Contact</a></li>
     </ul>
 <!-- this is my third List -->
-    <ul>
-      <li>Home</li>
-      <li>Gallery</li>
-      <li>About Me</li>
-      <li>Contact</li>
-    </ul>
-
+    <nav>
+      <ul>
+        <span>
+          <li>Home</li>
+          <li>Gallery</li>
+          <li>About Me</li>
+          <li>Contact</li>
+        </span>
+      </ul>
+    </nav>
   </body>
 </html>
