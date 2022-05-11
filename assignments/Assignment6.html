@@ -45,10 +45,14 @@
         }
         nav ul li:active {
           background-color: skyblue;
-          color: #161032;
+
         }
-        ul span {
-          color: lightgray
+        ul li a {
+          color: lightgray;
+          text-decoration: none;
+        }
+        nav ul li:active a {
+          color: #161032;
         }
     </style>
   </head>
@@ -70,12 +74,10 @@
 <!-- this is my third List -->
     <nav>
       <ul>
-        <span>
-          <li>Home</li>
-          <li>Gallery</li>
-          <li>About Me</li>
-          <li>Contact</li>
-        </span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </body>
