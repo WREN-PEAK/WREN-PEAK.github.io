@@ -122,6 +122,12 @@ main > img {
 }
 footer {
   background-color: #161032;
+  color: #70C5E4;
+  font-family: Verdana, sans-serif;
   margin: 0px;
-  padding: 20px;
+  padding: 1px 24px;
+}
+.copywrite {
+  font-weight: normal;
+  font-size: 10px;
 }
