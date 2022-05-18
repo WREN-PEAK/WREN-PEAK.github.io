@@ -59,6 +59,14 @@ main > img {
   width: 50%;
   height: 325px;
 }
+#yellowQuad2,
+#redQuad2,
+#blueQuad2,
+#tealQuad2 {
+  float: left;
+  width: 50%;
+  height: 325px;
+}
 #yellowQuad {
   background-color: #FFC145;
 }
