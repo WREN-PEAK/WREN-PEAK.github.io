@@ -3,6 +3,7 @@ header {
   padding-bottom: 0px;
   text-align: center;
   Margin: 0px;
+  font-family: Verdana, sans-serif;
 }
 header img {
   width: 300px;
@@ -41,10 +42,11 @@ main {
   margin: 0px 0px;
   position: relative;
 }
-main img {
+main > img {
   position: absolute;
   left: 50%;
   transform: translateX(-45%) translateY(-6%);
+  z-index: 10;
 }
 #quadContainer {
   padding: 34px 24px;
@@ -63,6 +65,13 @@ main img {
 #yellowQuad img {
   height: 280px;
   opacity: 40%;
+  width: 100%;
+}
+#Graphic {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 10px 0px 24px 10px;
 }
 #redQuad {
   background-color: #F8333C;
@@ -70,6 +79,13 @@ main img {
 #redQuad img {
   height: 280px;
   opacity: 40%;
+  width: 100%;
+}
+#printBrand {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 10px 10px 24px 0px;
 }
 #blueQuad {
   background-color: #70C5E4;
@@ -77,6 +93,13 @@ main img {
 #blueQuad img {
   height: 280px;
   opacity: 40%;
+  width: 100%;
+}
+#webUXUI {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0px 0px 10px 24px;
 }
 #tealQuad {
   background-color: #00B7AF;
@@ -84,6 +107,13 @@ main img {
 #tealQuad img {
   height: 280px;
   opacity: 40%;
+  width: 100%;
+}
+#photoMotion {
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0px 10px 10px 24px;
 }
 .clear {
   clear: both;

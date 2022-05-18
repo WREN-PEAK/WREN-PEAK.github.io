@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>WREN PEAK</title>
+    <style>
+      h1 {
+        padding-bottom: 5px;
+      }
+      #billTable,
+      #billTable th,
+      #billTable td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        padding: 12px;
+        text-align: center
+      }
+      #billTable {
+        Margin-bottom: 48px;
+      }
+      #column {
+        background-color: lightgray;
+      }
+      #data {
+        background-color: skyblue;
+      }
+      #billTable {
+        margin-bottom: 48px;
+      }
+      #billtableRow {
+        background-color: skyblue;
+      }
+      .billTableRow {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Monthly Bills</h1>
+    <table id="billTable">
+      <colgroup>
+        <col id="column">
+        <col id="data" span="3">
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="billTableHead">
+          <th>Bill</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="billTableRow">Phone</td>
+          <td>$120</td>
+          <td>$140</td>
+          <td>$140</td>
+        </tr>
+        <tr>
+          <td class="billTableRow">Gas</td>
+          <td>$90</td>
+          <td>$100</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td class="billTableRow">Food</td>
+          <td>$280</td>
+          <td>$280</td>
+          <td>$300</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
