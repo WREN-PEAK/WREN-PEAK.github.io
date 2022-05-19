@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>TABLE PAGE</title>
+    <style>
+      /* CSS common to both layouts */
+      .header {
+        background-color: lightgreen;
+        padding: 12px 24px;
+      }
+      .nav {
+        padding: 12px 24px;
+      }
+      .nav a {
+        padding-right: 36px;
+      }
+      .content {
+        padding: 36px;
+      }
+      .footer {
+        background-color: green;
+        padding: 12px 24px;
+      }
+      img.cat {
+        float: right;
+        margin-left: 12px;
+        width: 300px;
+      }
+      img.dog {
+        float: left;
+        margin-right: 12px;
+        width: 300px;
+      }
+      .clear {
+        clear: both;
+        margin: 48px;
+      }
+      /* CSS  specific to the table layout */
+      #oldTableLayout {
+        border-collapse: collapse;
+        margin-bottom: 48px;
+      }
+      #oldTableLayout .nav {
+        background-color: #DDFFDD;
+      }
+      /* CSS for the Float Layout */
+      #oldFloatLayout .nav {
+        box-sizing: border-box;
+        float: left;
+        width: 20%;
+      }
+      #oldFloatLayout .content {
+        box-sizing: border-box;
+        float: left;
+        width: 80%;
+      }
+      /* This is the clearfix */
+      #oldFloatLayout .main:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #oldFloatLayout .main {
+        background: linear-gradient(to right, #DDFFDD 20%, white 20.0001%);
+      }
+
+    </style>
+  </head>
+  <body>
+    <table id="oldTableLayout">
+      <tr>
+        <td class="header" colspan="2">
+          <h1> This is how page layouts used to be done in tables</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="nav">
+          <div ><a href="#">Home</a></div>
+          <div><a href="#">Gallery</a></div>
+          <div><a href="#">About Me</a></div>
+          <div><a href="#">Contact</a></div>
+        </td>
+        <td class="content">
+          <img class="cat" src="../../images/parret.jpeg" alt="bird">
+          <p>
+            Dolor ex consequat, fore possumus se laborum. Qui culpa
+            voluptatibus. In aute consequat efflorescere.Constias veniam
+            duis ad quorum, te proident ad nostrud, an noster
+            illustriora, ad velit adipisicing non si hic culpa occaecat
+            non laborum sed duis doctrina, minim de arbitror id anim,
+            doctrina ubi velit. O aliqua excepteur mandaremus te o
+            labore senserit admodum, aut quid vidisse eiusmod ab quae
+            ita quibusdam, et expetendis aut fabulas eu ipsum arbitror
+            se quis irure do fabulas velit velit consequat sint, qui non
+            exercitation. Et export occaecat imitarentur, mandaremus
+            graviterque ab excepteur, a esse offendit imitarentur, et
+            multos eu aliqua.
+          </p>
+          <div class="clear"></div>
+          <img class="dog" src="../../images/parret.jpeg" alt="bird">
+          <p>
+            Aute proident ut incurreret non se id fugiat labore nulla
+            est nam nostrud eruditionem e quo e dolore nescius. A
+            offendit sempiternum e o cillum possumus, quae et proident
+            qui magna de occaecat eram ne quamquam imitarentur. Sed
+            dolore est velit, officia amet ne aliquip cohaerescant.
+            Appellat multos sed arbitror exercitation, ut hic legam
+            cillum sint aut hic quo nulla deserunt, si labore e
+            malis.Ubi si aliqua eram esse ex qui noster esse culpa
+            ullamco, o anim mentitum exquisitaque in e anim cupidatat.
+            Offendit multos id laborum firmissimum. Amet proident
+            coniunctione, iudicem aut elit. Laborum quis a voluptate
+            distinguantur ex quorum laborum in fidelissimae.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="footer" colspan="2">
+          copyright &copy; Symphori Games 2022
+        </td>
+      </tr>
+    </table>
+
+    <div id="oldFloatLayout">
+      <div class="header">
+        <h1>This is how page layouts used to be done with floats</h1>
+      </div>
+      <div class="main">
+        <div class="nav">
+          <div ><a href="#">Home</a></div>
+          <div><a href="#">Gallery</a></div>
+          <div><a href="#">About Me</a></div>
+          <div><a href="#">Contact</a></div>
+        </div>
+          <div class="content">
+            <img class="cat" src="../../images/parret.jpeg" alt="bird">
+            <p>
+              Dolor ex consequat, fore possumus se laborum. Qui culpa
+              voluptatibus. In aute consequat efflorescere.Constias veniam
+              duis ad quorum, te proident ad nostrud, an noster
+              illustriora, ad velit adipisicing non si hic culpa occaecat
+              non laborum sed duis doctrina, minim de arbitror id anim,
+              doctrina ubi velit. O aliqua excepteur mandaremus te o
+              labore senserit admodum, aut quid vidisse eiusmod ab quae
+              ita quibusdam, et expetendis aut fabulas eu ipsum arbitror
+              se quis irure do fabulas velit velit consequat sint, qui non
+              exercitation. Et export occaecat imitarentur, mandaremus
+              graviterque ab excepteur, a esse offendit imitarentur, et
+              multos eu aliqua.
+            </p>
+            <div class="clear"></div>
+            <img class="dog" src="../../images/parret.jpeg" alt="bird">
+            <p>
+              Aute proident ut incurreret non se id fugiat labore nulla
+              est nam nostrud eruditionem e quo e dolore nescius. A
+              offendit sempiternum e o cillum possumus, quae et proident
+              qui magna de occaecat eram ne quamquam imitarentur. Sed
+              dolore est velit, officia amet ne aliquip cohaerescant.
+              Appellat multos sed arbitror exercitation, ut hic legam
+              cillum sint aut hic quo nulla deserunt, si labore e
+              malis.Ubi si aliqua eram esse ex qui noster esse culpa
+              ullamco, o anim mentitum exquisitaque in e anim cupidatat.
+              Offendit multos id laborum firmissimum. Amet proident
+              coniunctione, iudicem aut elit. Laborum quis a voluptate
+              distinguantur ex quorum laborum in fidelissimae.
+            </p>
+          </div>
+      </div>
+      <div class="footer">
+        copyright &copy; Symphori Games 2022
+      </div>
+    </div>
+  </body>
+</html>

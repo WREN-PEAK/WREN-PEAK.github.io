@@ -45,7 +45,7 @@ main {
 main > img {
   position: absolute;
   left: 50%;
-  transform: translateX(-45%) translateY(-6%);
+  transform: translateX(-45%) translateY(14%);
   z-index: 10;
 }
 #quadContainer {
@@ -80,7 +80,7 @@ main > img {
 }
 #yellowQuad2 img {
   height: 280px;
-  opacity: 50%;
+  opacity: 15%;
   width: 100%;
 }
 #Graphic {
@@ -102,7 +102,7 @@ main > img {
 }
 #redQuad2 img {
   height: 280px;
-  opacity: 50%;
+  opacity: 15%;
   width: 100%;
 }
 #printBrand {
@@ -125,7 +125,7 @@ main > img {
 }
 #blueQuad2 img {
   height: 280px;
-  opacity: 50%;
+  opacity: 15%;
   width: 100%;
 }
 #webUXUI {
@@ -147,7 +147,7 @@ main > img {
 }
 #tealQuad2 img {
   height: 280px;
-  opacity: 50%;
+  opacity: 15%;
   width: 100%;
 }
 #photoMotion {
