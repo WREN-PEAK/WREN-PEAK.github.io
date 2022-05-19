@@ -40,6 +40,8 @@ nav ul li:active a {
 main {
   background-color: #3B3E4F;
   margin: 0px 0px;
+  padding: 24px;
+
   position: relative;
 }
 /* Code for the Logo Placement */
@@ -50,7 +52,7 @@ main > img {
   z-index: 10;
 }
 #quadContainer {
-  padding: 34px 24px;
+  padding: 6px 10px;
 }
 #yellowQuad,
 #redQuad,
@@ -158,6 +160,18 @@ main > img {
   height: 280px;
   opacity: 15%;
   width: 100%;
+}
+#background {
+
+}
+#education {
+
+}
+#focus {
+
+}
+#awards {
+  
 }
 /* End About */
 #photoMotion {
