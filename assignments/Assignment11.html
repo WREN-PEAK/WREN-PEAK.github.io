@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>FLEX CONTAINER PROPERTIES</title>
+    <title>ASSIGNMENT 11</title>
     <style>
       body {
         font-family: Verdana;
@@ -11,12 +11,12 @@
            }
           .flexChild {
             background-color: pink;
-            border: 2px solid skyblue;
+            border: 2px solid magenta;
             border-radius: 4px;
             font-size: 24px;
             font-weight: bold;
             height: 50px;
-            width: 50px;
+            width: 200px;
             margin: 10px;
             padding: 8px 14px;
           }
@@ -31,7 +31,7 @@
           height: 200px;
         }
         .FlexChildSpaceBetween {
-          width: 200px;
+          width: 600px;
         }
         .flexContainer {
           background-color: purple;
@@ -48,9 +48,6 @@
           flex-direction: column;
           justify-content: flex-end;
         }
-        .alignItems {
-          align-items: end;
-        }
         .justifySpaceBetween {
           justify-content: space-between
         }
@@ -59,28 +56,28 @@
   <body>
     <h2>Row In Reverse</h2>
     <div>
-      <div class="flexContainer flexChildRowReverse">
+      <div class="flexContainer flexDirection">
       <div class="flexChild flexDirection">i</div>
       <div class="flexChild flexDirection">ii</div>
       <div class="flexChild flexDirection">iii</div>
       <div class="flexChild flexDirection">iv</div>
     </div>
     <h2>Row That Wraps</h2>
-    <div class="flexContainer flexChildWrapRow">
+    <div class="flexContainer flexWrap">
       <div class="flexChild flexWrap">i</div>
       <div class="flexChild flexWrap">ii</div>
       <div class="flexChild flexWrap">iii</div>
       <div class="flexChild flexWrap">iv</div>
     </div>
     <h2>Column Aligns End</h2>
-    <div class="flexContainer flexChildColmnEnd">
+    <div class="flexContainer justifyContent">
       <div class="flexChild justifyContent">i</div>
       <div class="flexChild justifyContent">ii</div>
       <div class="flexChild justifyContent">iii</div>
       <div class="flexChild justifyContent">iv</div>
     </div>
     <h2>Row Justifies Space Between</h2>
-    <div class="flexContainer FlexChildSpaceBetween">
+    <div class="flexContainer justifySpaceBetween">
       <div class="flexChild justifySpaceBetween">i</div>
       <div class="flexChild justifySpaceBetween">ii</div>
       <div class="flexChild justifySpaceBetween">iii</div>
