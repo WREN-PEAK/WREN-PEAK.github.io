@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>WASSIGNMENT 13</title>
+    <style>
+   .myGrid {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-auto-rows: minmax(50px, auto);
+     grid-template-areas:
+         "header header header header header"
+         "sidenav sidenav sidenav content content"
+         "sidenav sidenav sidenav content content"
+         "sidenav sidenav sidenav content content"
+         "sidenav sidenav sidenav content content"
+         "footer footer footer footer footer";
+   }
+   .block {
+     padding: 20px;
+   }
+   .header {
+     background-color: teal;
+     flex-grow: 1;
+     grid-area: header;
+     padding-bottom: 10px;
+     text-align: center;
+     Margin: 0px;
+     font-family: Verdana, sans-serif;
+   }
+   img {
+     height: 300px;
+   }
+   h1 {
+     color: coral;
+   }
+   .sidenav {
+     background-color: #3B3E4F;
+     grid-area: sidenav;
+     padding: 36px;
+   }
+   .picGallery {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-auto-rows: minmax(100px, auto);
+     grid-template-areas:
+      "block1 block3 block3"
+      "block1 block3 block3"
+      "block2 block3 block3"
+      "block2 block3 block3";
+     padding: 36px;
+     gap: 24px;
+   }
+   .block1 {
+     background-color: teal;
+     padding: 36px;
+     grid-area: block1;
+   }
+   .block2 {
+     background-color: teal;
+     padding: 36px;
+     grid-area: block2;
+   }
+   .block3 {
+     background-color: coral;
+     padding: 36px;
+     grid-area: block3;
+ }
+   .content {
+     grid-area: content;
+     padding: 36px;
+     width: 300px;
+   }
+   h3 {
+     color: teal;
+     padding: 12px;
+     text-align: center;
+     Margin: 0px;
+     font-family: Verdana, sans-serif;
+   }
+   h4 {
+     color: teal;
+     padding-top: 12px;
+   }
+   footer {
+     background-color: coral;
+     grid-area: footer;
+   }
+ </style>
+</head>
+<body>
+   <div class="myGrid">
+     <div class="header">
+       <h1>Wren Peak's Gallery Grid</h1>
+       <img src="../images/beautifulSunset.jpg" alt="Sun Set">
+     </div>
+     <div class="sidenav">
+       <div class="picGallery">
+         <div class="block block1"></div>
+         <div class="block block2"></div>
+         <div class="block block3"></div>
+       </div>
+     </div>
+     <div class="content">
+       <div>
+         <h4>About My Editorial Design</h4>
+         <p>
+           Vidisse hic illum, a summis relinqueret. Nulla mentitum et
+           offendit, aute qui sed duis vidisse. Expetendis labore quo
+           aliquip domesticarum, appellat et malis, magna pariatur
+           quamquam non anim laboris qui fore aute. Quo eram singulis
+           concursionibus est de o comprehenderit, sed sed quae culpa
+           nulla, nostrud cillum multos aliquip nisi.Ex incurreret
+           efflorescere, tamen a litteris ex veniam. Ne nam enim
+           mandaremus.
+         </p>
+         <h4>About My Other Editorial Design</h4>
+           <p>
+           Tamen nostrud imitarentur. Probant imitarentur qui arbitror.
+           Aute deserunt adipisicing an excepteur hic appellat, sed
+           doctrina ubi expetendis si do sint quis et commodo. Fugiat
+           sempiternum pariatur multos singulis.Tempor et do quis
+           senserit. Summis est deserunt ad elit iis nescius
+           exercitation non doctrina an litteris quid eram arbitror
+           quem, ullamco fugiat minim ingeniis export.
+         </p>
+       </div>
+     </div>
+     <footer>
+       <h3>My Cool Gallery Page</h3>
+     </footer>
+    </div>
+ </body>
+</html>
