@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>GRID WEBSITE DEMO</title>
+      <style>
+        .myGrid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-auto-rows: minmax(50px, auto);
+          grid-template-areas:
+            "myHeader myHeader myHeader"
+            "sidenav content content";
+        }
+        header {
+          background-color: lightgreen;
+          padding: 36px;
+          grid-area: myHeader;
+        }
+        nav {
+          background-color: #DDFFDD;
+          padding: 36px;
+          grid-area: sidenav;
+        }
+        main {
+          padding: 36px;
+          grid-area: content;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <header>
+        <h1>This is how page layouts can be done with Grids and Areas get used</h1>
+      </header>
+      <nav>NAVIGATION GOES HERE</nav>
+      <main>
+        <p>
+          Ubi aute do quem ab velit relinqueret arbitror fugiat
+          mandaremus ut magna iis laboris ne fugiat, constias magna
+          ingeniis. Ubi enim incurreret pariatur ne litteris ipsum
+          cupidatat nostrud ea irure ubi cupidatat, se summis iudicem
+          sempiternum, ex fore quamquam nam do enim despicationes,
+          ipsum mentitum fabulas qui veniam nostrud probant. Laboris
+          fore quorum est velit, ita tempor enim veniam voluptate.
+          Noster exquisitaque excepteur anim deserunt, tempor
+          expetendis consequat te expetendis multos constias e culpa
+          expetendis laborum quo quamquam cillum fabulas, mentitum
+          duis ipsum ubi quid ubi sint quibusdam in esse quis qui o
+          minim aut tamen.Fabulas ad cernantur, do ne elit singulis.
+          Ex sunt offendit firmissimum de quis si commodo hic dolore
+          incididunt pariatur, possumus firmissimum aut occaecat. Ita
+          mandaremus consectetur an an duis consectetur.
+        </p>
+        <p>
+          Ita ubi culpa irure aliqua ubi quo labore eram non proident.
+          Pariatur ea multos doctrina qui summis si excepteur ea sint.
+          Ubi do tractavissent, illum an ne velit constias eu
+          excepteur ipsum nisi et noster, quem offendit id cernantur,
+          multos o et noster ingeniis quo dolor fabulas in malis
+          export sed mentitum hic export hic ubi quae nescius nostrud.
+          Ullamco id quibusdam ex an fabulas do quamquam.Ullamco
+          domesticarum e proident sed ab nulla nostrud proident ea
+          tempor fabulas coniunctione quo hic cupidatat concursionibus
+          est cernantur a ingeniis se irure doctrina ubi constias te
+          nam officia sed ullamco ab deserunt multos a arbitror
+          adipisicing. Commodo fugiat admodum non iudicem se fugiat
+          incurreret qui velit praesentibus voluptate magna mentitum
+          ita ea veniam eiusmod fabulas. Ne veniam duis export
+          possumus, tamen admodum ut eruditionem. Aut quibusdam
+          relinqueret.
+          </p>
+      </main>
+    </div>
+  </body>
+</html>
