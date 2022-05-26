@@ -281,30 +281,40 @@ footer {
       "sidenav sidenav sidenav content content"
       "sidenav sidenav sidenav content content"
 }
-.block {
-  padding: 20px;
-}
 .sidenav {
   background-color: #3B3E4F;
   grid-area: sidenav;
-  padding: 36px;
+  padding: 4px;
 }
-.picGallery {
-  display: grid;
+/* .picGallery { */
+  /* display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas:
-   "block1 block2 block2 block2"
-   "block1 block2 block2 block2"
-   "block3 block4 block4 block5"
-   "block3 block4 block4 block5";
+   "block1 block1 block2 block2 block2"
+   "block1 block1 block2 block2 block2"
+   "block3 block3 block4 block4 block5"
+   "block3 block3 block4 block4 block5";
   padding: 36px;
   gap: 24px;
+} */
+.picGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 24px;
 }
-.block1 {
+.picGallery img {
+  height: 250px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+/* .block1 {
   background-color: #70C5E4;
-  padding: 36px;
   grid-area: block1;
+}
+.block1 img {
+   width: 100%;
 }
 .block2 {
   background-color: #70C5E4;
@@ -325,7 +335,7 @@ footer {
   background-color: #70C5E4;
   padding: 36px;
   grid-area: block5;
-}
+} */
 h4 {
   font-family: Verdana, sans-serif;
 }
@@ -333,6 +343,6 @@ h4 {
   background-color: white;
   font-size: 14px;
   grid-area: content;
-  padding: 50px 300px 0px 24px;
+  padding: 70px 300px 0px 24px;
   width: 350px;
 }
