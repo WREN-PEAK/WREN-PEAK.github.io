@@ -305,9 +305,14 @@ footer {
 padding: 12px;
 }
 @media screen and (max-width: 480px) {
-
+  header img {
+    width: 260px;
+  }
   nav ul {
     text-align: center;
+  }
+  ul li a {
+    font-size: 13px;
   }
   footer {
     text-align: center;
