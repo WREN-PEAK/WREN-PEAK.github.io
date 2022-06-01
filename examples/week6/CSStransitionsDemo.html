@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>CSS Transitions-Animations</title>
+    <style>
+      #transition1 {
+        transition-property: color;
+        transition-duration: 2s;
+        transition-delay: 0.5s;
+      }
+      #transition1:hover {
+        color: red;
+      }
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        transition:
+          background-color 2s,
+          border-radius 2s;
+      }
+      #box:hover {
+        background-color: blue;
+        border-radius: 50%;
+      }
+      img {
+        width: 250px;
+        transition: transform 1s;
+      }
+      img:hover {
+        transform: scale(3) rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">
+      This is a basic Transition.
+    </h1>
+    <div id="box"></div>
+    <img src="../../images/modeCover.png">
+    <p>
+      Malis ab constias ne esse ut do iis multos esse aliqua, nam
+      export fabulas qui magna deserunt ubi fugiat velit, laboris
+      a aliquip, veniam de constias id proident sunt iis
+      incididunt cohaerescant nam incurreret export do aliquip
+      imitarentur. Sunt de litteris ut export. Tempor sed constias
+      ab occaecat dolore offendit. Irure cernantur pariatur hic eu
+      nulla summis quorum ingeniis.Probant aliqua quo incurreret
+      exercitation. Culpa si cupidatat an malis, se anim
+      arbitrantur. Appellat esse export non velit, ullamco magna
+      nulla qui esse.
+      </p>
+  </body>
+</html>
