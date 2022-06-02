@@ -38,7 +38,7 @@
       }
       nav {
         grid-area: navbar;
-        height: 0px;
+        height: 26px;
         }
       nav ul {
         background-color: lightgray;
@@ -113,6 +113,15 @@
             flex-direction: column;
             align-items: center;
           }
+          /* I added this thinking it would make my cards stack not working */
+          #cardsContainer img {
+            grid-template-columns: 1fr;
+            flex-direction: column;
+            align-items: center;
+          }
+          #aside img {
+            column-width: 200px;
+          }
         }
     </style>
   </head>
@@ -133,9 +142,20 @@
           <li><a href="#">MERCHANDISE</a></li>
         </ul>
       </nav>
-      <section id="bannerContainer">BANNER</section>
-      <section id="cardsContainer">CARDS</section>
-      <aside>ASIDE</aside>
+      <section id="bannerContainer">
+        <img src="GRRMimages/GRRMbanner.jpg">
+      </section>
+      <section id="cardsContainer">
+        <img src="GRRMimages/cocteau3.jpg">
+        <img src="GRRMimages/newsletter.png">
+        <img src="GRRMimages/callout3.jpg">
+      </section>
+      <aside>
+        <img src="GRRMimages/nextAppear.png">
+        <img src="GRRMimages/wcComic.png">
+        <img src="GRRMimages/wcVideo.png">
+        <img src="GRRMimages/stageC.jpg">
+      </aside>
       <main>BLOGPOSTS</main>
       <footer>FOOTER</footer>
       <div id="bottom"></div>
