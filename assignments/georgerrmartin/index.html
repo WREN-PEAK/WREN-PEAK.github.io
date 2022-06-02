@@ -2,6 +2,9 @@
 <html lang="en-US">
   <head>
     <title>GRRM Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
     <style>
       #gridLayout {
         display: grid;
@@ -25,13 +28,13 @@
       footer,
       #bottom {
         border: 3px solid gray;
-        height: 100px;
       }
       header {
         grid-area: header;
       }
       header h1 {
         display: inline-block;
+        font-family: 'Montaga', serif;
       }
       nav {
         grid-area: navbar;
@@ -44,6 +47,7 @@
         padding: 2px 0px 0px 0px;
         text-align: center;
         display: flex;
+        justify-content: space-between;
       }
       nav ul li {
         transition: background-color 0.5s;
@@ -60,7 +64,7 @@
       }
       ul li a {
         color: black;
-        font-family: Times, serif;
+        font-family: 'Montaga', serif;
         font-size: 12px;
         text-decoration: none;
       }
@@ -104,24 +108,28 @@
           header h1 {
             display: block:
           }
+          nav ul {
+            flex-direction: column;
+            align-items: center;
+          }
         }
     </style>
   </head>
   <body>
     <div id="gridLayout">
       <header>
-        <img src="../images/shield-spin.jpg" alt="shield">
+        <img src="GRRMimages/shieldLogo.jpg" alt="shield">
         <h1>GEORGE R. R. MARTIN</h1>
       </header>
       <nav>
         <ul>
           <li><a href="#">HOME</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">NOT A BLOG</a></li>
+          <li><a href="#">ABOUT GEORGE</a></li>
           <li><a href="#">BOOKS</a></li>
-          <li><a href="#">FANS</a></li>
+          <li><a href="#">FOR FANS</a></li>
           <li><a href="#">NEWS</a></li>
-          <li><a href="#">MERCH</a></li>
+          <li><a href="#">MERCHANDISE</a></li>
         </ul>
       </nav>
       <section id="bannerContainer">BANNER</section>
