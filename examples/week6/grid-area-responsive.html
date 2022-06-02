@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>GRID AREA RESPONSIVE</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+        "myHeader myHeader myHeader"
+        "sidenav content content";
+      }
+      header {
+        background-color: lightgreen;
+        padding: 36px;
+        grid-area: myHeader;
+      }
+      nav {
+        background-color: #DDFFDD;
+        padding: 36px;
+        grid-area: sidenav;
+      }
+      main {
+        padding: 36px;
+        grid-area: content;
+      }
+      @media screen and (max-width: 480px) {
+        .myGrid {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+          "myHeader"
+          "sidenav"
+          "content";
+        }
+        header,
+        nav,
+        main {
+          padding: 18px;
+        }
+        header,
+        nav {
+          text-align: center;
+        }
+        header h1 {
+          font-size: 24px;
+          margin: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <header>
+        <h1>Grid Area Resposive Demo</h1>
+      </header>
+      <nav>NAVIGATION HERE</nav>
+      <main>
+        <p>
+          Iis o elit aliquip. Minim proident arbitror, cupidatat elit
+          officia mentitum. Ne nulla tempor magna commodo eu labore
+          eiusmod an amet enim.Eram cernantur despicationes quo quae
+          vidisse comprehenderit non de enim dolore quid eiusmod,
+          dolor singulis nam instituendarum a nescius eram aliquip
+          excepteur iis nisi qui mandaremus, tempor ut nescius do
+          expetendis nulla est aliquip despicationes. Laborum illum
+          magna si aliqua qui ad quo nisi doctrina quo laboris o
+          probant, sed illum ipsum quae quamquam, excepteur sunt
+          quorum te elit, incididunt comprehenderit quo quibusdam id
+          aliqua concursionibus ullamco amet commodo, ut quis possumus
+          distinguantur. Legam iis aliquip, velit constias est velit
+          nulla ita se id duis cupidatat id tempor mentitum ab
+          possumus, dolore ab quibusdam e illum, ne incurreret ne
+          ingeniis se enim iis ingeniis ne sunt occaecat litteris.
+        </p>
+        <p>
+          Ex enim adipisicing, aute voluptatibus arbitror amet
+          admodum, amet sed deserunt o velit in in ea sunt iudicem,
+          duis admodum e fabulas an ingeniis id quid mentitum et non
+          vidisse hic expetendis, expetendis efflorescere eu ingeniis.
+          Sed non firmissimum hic a labore iis fore do e occaecat ne
+          cernantur iis non ab elit amet dolor. Doctrina irure eram
+          qui veniam. Irure id ullamco a veniam.Do possumus
+          exquisitaque ab singulis aliqua vidisse, ad sed nulla tamen
+          aute, velit despicationes voluptate velit probant, doctrina
+          cillum ipsum sed sunt, quamquam cillum eu litteris
+          transferrem ex aut ut noster admodum, quid senserit eu
+          imitarentur. In quae minim id quibusdam, hic velit et velit
+          qui nam eu familiaritatem non possumus efflorescere ad
+          aliquip, sed nulla duis o litteris se e fore quae o
+          ingeniis, quis fabulas praesentibus id eu aute incurreret
+          sempiternum. Iis magna sed dolore ab quae et commodo e
+          noster, veniam admodum de concursionibus, excepteur ab
+          cupidatat, fabulas aute velit ut nisi ut quorum non ut quem
+          constias, mentitum labore illum constias minim, illum in ex
+          quem incurreret.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
