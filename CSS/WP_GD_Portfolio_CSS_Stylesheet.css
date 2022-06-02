@@ -322,6 +322,13 @@ footer {
   ul li a {
     font-size: 13px;
   }
+  /* .pageGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "sidenav"
+    "content";
+    text-align: center;
+  } */
   footer {
     text-align: center;
   }
@@ -343,4 +350,5 @@ footer {
   #tealQuad img {
     height: 200px;
   }
+
 }
