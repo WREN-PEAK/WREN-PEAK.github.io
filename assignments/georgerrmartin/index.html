@@ -36,6 +36,20 @@
         justify-content: space-between;
         align-items: center;
       }
+      @keyframes shieldSpin {
+        0%, 100% {
+          transform: scaleX(1);
+        }
+        50% {
+          transform: scaleX(-1);
+        }
+      }
+      #shield:hover {
+        animation: shieldSpin 1s infinite;
+      }
+      .icon {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35)
+      }
       header h1 {
         display: inline-block;
         font-family: 'Montaga', serif;
@@ -161,11 +175,11 @@
   <body>
     <div id="gridLayout">
       <header>
-        <img src="GRRMimages/shieldLogo.jpg" alt="shield">
+        <img id="shield" src="GRRMimages/shieldLogo.png" alt="shield">
         <h1>GEORGE R. R. MARTIN</h1>
-        <img src="GRRMimages/facebookicon.jpg" alt="fb button">
-        <img src="GRRMimages/twitIcon.jpg" alt="fb button">
-        <img src="GRRMimages/facebookicon.jpg" alt="fb button">
+        <img class="icon" src="GRRMimages/facebookicon.png" alt="fb button">
+        <img class="icon" src="GRRMimages/twitIcon.png" alt="fb button">
+        <img class="icon" src="GRRMimages/facebookicon.png" alt="fb button">
       </header>
       <nav>
         <ul>
