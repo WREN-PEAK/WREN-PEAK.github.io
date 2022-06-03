@@ -27,7 +27,7 @@ nav ul li {
   padding: 4px 10px;
 }
 nav ul li:hover {
-  background-color: darkgray;
+  background-color: #F8333C;
   color: white;
 }
 nav ul li:active {
