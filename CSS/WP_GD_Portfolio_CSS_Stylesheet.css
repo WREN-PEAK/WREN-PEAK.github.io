@@ -7,6 +7,10 @@ header {
   text-align: center;
   Margin: 0px;
 }
+body,
+footer {
+  Margin: 0px;
+}
 header img {
   width: 300px;
 }
@@ -91,7 +95,7 @@ section {
 }
 /* End About */
 #Graphic {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   margin: 24px 0px 10px 10px;
 }
@@ -114,7 +118,7 @@ section {
 }
 /* End About */
 #printBrand {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   text-align: right;
   margin: 24px 10px 10px 10px;
@@ -138,7 +142,7 @@ section {
 }
 /* End About */
 #webUXUI {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   margin: 6px 0px 10px 10px;
 }
@@ -149,6 +153,12 @@ section {
   height: 280px;
   opacity: 50%;
   width: 100%;
+}
+#photoMotion {
+  font-size: 12px;
+  font-weight: bold;
+  text-align:right;
+  margin: 6px 10px 10px 24px;
 }
 /* About Me Page CSS */
 #tealQuad2 {
@@ -163,7 +173,7 @@ section {
 #background {
   background-image: url("../images/index-yellow-quad.png");
   background-size: cover;
-  box-shadow: inset 0 0 0 50vw rgba(255,193,69,0.85);
+  box-shadow: inset 0 0 0 50vw rgba(250,211,132,0.80);
   padding: 24px;
 }
 #background #aboutMeHeading {
@@ -178,7 +188,7 @@ section {
 #education {
   background-image: url("../images/index-red-quad.png");
   background-size: cover;
-  box-shadow: inset 0 0 0 50vw rgba(248,51,60,0.85);
+  box-shadow: inset 0 0 0 50vw rgba(248,113,119,0.85);
   padding: 24px;
 }
 #education #aboutMeHeading {
@@ -199,7 +209,7 @@ section {
 #focus {
   background-image: url("../images/index-blue-quad.png");
   background-size: cover;
-  box-shadow: inset 0 0 0 50vw rgba(112,197,228,0.85);
+  box-shadow: inset 0 0 0 50vw rgba(124,215,248,0.80);
   padding: 24px;
 }
 #focus #aboutMeHeading {
@@ -216,7 +226,7 @@ section {
 #awards {
   background-image: url("../images/index-teal-quad.png");
   background-size: cover;
-  box-shadow: inset 0 0 0 50vw rgba(0,183,176,0.85);
+  box-shadow: inset 0 0 0 50vw rgba(73,222,216,0.78);
   padding: 24px;
 }
 #awards #aboutMeHeading {
@@ -232,12 +242,6 @@ li {
   font-size: 12px;
 }
 /* End About */
-#photoMotion {
-  font-size: 10px;
-  font-weight: bold;
-  text-align:right;
-  margin: 6px 10px 10px 24px;
-}
 .clear {
   clear: both;
 }
