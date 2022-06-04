@@ -35,6 +35,7 @@
         padding: 12px;
         justify-content: space-between;
         align-items: center;
+        background: linear-gradient(lightgrey, white 50%, lightgrey);
       }
       @keyframes shieldSpin {
         0%, 100% {
@@ -47,10 +48,9 @@
       #shield:hover {
         animation: shieldSpin 1s infinite;
       }
-      /* drop shaddow was ther but is gone now? */
       .icon {
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
-        padding: 0px 10px 0px 0px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.65);
+        margin: 0px 20px 0px 0px;
       }
       header h1 {
         display: inline-block;
@@ -64,6 +64,8 @@
       nav {
         grid-area: navbar;
         height: 26px;
+        /* border: 3px solid gray;
+        background: linear-gradient(lightgrey 10%, white 80%, lightgrey 10%); */
         }
       nav ul {
         background-color: lightgray;
@@ -123,6 +125,8 @@
         #blogContainer h2 {
           text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
           font-weight: normal;
+          /* font-variant: smallcaps; This did not work either */
+          /* text-size: adjust 0.75; did not make sm caps*/
         }
         #blogContainer h3 {
           color: #546984;
@@ -172,9 +176,42 @@
             align-items: center;
           }
         }
+        /* what I added that is not working */
+        @media screen and (max-width: 480px) {
+          #gridLayout {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "header"
+            "navbar"
+            "banner"
+            "blog"
+            "cards"
+            "aside"
+            "footer"
+            "bottom";
+          }
+          header,
+          nav,
+          section id="bannerContainer",
+          section id="cardsContainer",
+          aside,
+          main,
+          footer {
+            padding: 18px;
+          }
+          header,
+          nav {
+            text-align: center;
+          }
+          header h1 {
+            font-size: 24px;
+            margin: 0px;
+          }
+        }
     </style>
   </head>
   <body>
+    <!-- <div id="smallScreen"> -->
     <div id="gridLayout">
       <header>
         <img id="shield" src="GRRMimages/shieldLogo.png" alt="shield">
@@ -239,5 +276,6 @@
       </footer>
       <div id="bottom"></div>
     </div>
+    <!-- </div> -->
   </body>
 </html>
