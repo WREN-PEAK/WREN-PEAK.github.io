@@ -105,6 +105,7 @@
           }
       #bannerContainer img {
         flex-grow: 1;
+        border: lightgrey solid 1.5px;
           }
       #cardsContainer {
         grid-area: cards;
@@ -112,12 +113,16 @@
         }
       #cardsContainer img {
           flex-grow: 1;
+          border: lightgrey solid 1.5px;
         }
         aside {
           grid-area: aside;
         }
         aside img {
           width: 100%;
+        }
+        .asideAd {
+          border: lightgrey solid 2px;
         }
         #blogContainer {
           background-color: white;
@@ -243,8 +248,10 @@
         <img src="GRRMimages/nextAppear.png" alt="Apperance Info">
         <img src="GRRMimages/wcComic.png" alt="Wild Card Comic Info">
         <img src="GRRMimages/wcVideo.png" alt="Wild Card Video">
-        <img src="GRRMimages/valyr3.jpg" alt="Valyrian Steel Advertisment">
-        <img src="GRRMimages/stageC.jpg" alt="Stagecoach Promo">
+        <div class="asideAd">
+          <img src="GRRMimages/valyr3.jpg" alt="Valyrian Steel Advertisment">
+          <img src="GRRMimages/stageC.jpg" alt="Stagecoach Promo">
+        </div>
       </aside>
       <main id="blogContainer">
         <h2>CURRENT GRRM BLOG POSTS</h2>

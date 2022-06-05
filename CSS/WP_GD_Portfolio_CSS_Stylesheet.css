@@ -306,27 +306,34 @@ footer {
   width: 350px;
 }
 /* CSS for contact page */
-/* #contactGrid {
+  #contactGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(33.33%, auto);
   grid-template-areas:
   "left MidUp   right"
   "left MidDown right"
-} */
-/* .left {
+}
+.left {
 align: right;
 }
 .midUp {
-  align: left;
+  align: center;
+  color: white;
 }
 .midDown {
-
+    align: bottom;
+    color: white;
+    width:300px;
+    margin-right: 24px;
+    margin-bottom: 24px;
 }
 .right {
-  align: left;
-} */
-
+  align: right;
+  width: 300px auto;
+  opacity: 40%;
+}
+}
 #yellowQuad a,
 #redQuad a,
 #blueQuad a,
@@ -338,7 +345,7 @@ align: right;
 #redQuad:hover,
 #blueQuad:hover,
 #tealQuad:hover {
-  opacity: 90%;
+opacity: 90%;
 }
 @media screen and (max-width: 480px) {
   header img {
