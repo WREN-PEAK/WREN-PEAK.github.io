@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <h2>Text Input</h2>
+      <p>What Is Your Name?</p>
+      <div>
+        <label for="firstNameId">First Name:</label>
+        <input type="text" id="firstNameId" name="firstName">
+    </div>
+    <div>
+      <label for="lastNameId">Last Name:</label>
+      <input type="text" id="lastNameId" name="lastName">
+  </div>
+    <h2>Textarea Input</h2>
+    <div>
+    <label for="codeFeelingsId">
+      How do you feel about programming?</label><br>
+      <textarea id="codeFeelingsId" name="codeFeelings"
+      rows="5" cols="50">Default Text</textarea>
+  </div>
+      <h2>Radio Inputs</h2>
+      <p>What program are you in?</p>
+        <div>
+          <input type="radio" id="raspRadio" name="program"
+          value="rasp">
+          <label for="raspRadio">
+            Recording Arts and Show Production
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="dfvpRadio" name="program"
+        value="dfvp">
+        <label for="dfvpRadio">
+          Digital Filmaking and Video Production
+      </label>
+    </div>
+    <div>
+      <input type="radio" id="gdwdpRadio" name="program"
+      value="gdwd">
+      <label for="gdwdRadio">
+        Graphic Design and Web Development
+    </label>
+  </div>
+    </form>
+  </body>
+</html>

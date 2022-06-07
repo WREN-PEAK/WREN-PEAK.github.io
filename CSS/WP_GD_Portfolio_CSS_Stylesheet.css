@@ -279,7 +279,7 @@ footer {
       "sidenav sidenav sidenav content content"
       "sidenav sidenav sidenav content content"
       "sidenav sidenav sidenav content content"
-      "sidenav sidenav sidenav content content"
+      "sidenav sidenav sidenav content content";
 }
 .sidenav {
   background-color: #3B3E4F;
@@ -312,27 +312,25 @@ footer {
   grid-auto-rows: minmax(33.33%, auto);
   grid-template-areas:
   "left MidUp   right"
-  "left MidDown right"
+  "left MidDown right";
 }
-.left {
-align: right;
+.logo {
+  grid-area: left;
+  margin: 4px 10px 0px 140px;
 }
-.midUp {
-  align: center;
+.text {
+  grid-area: midUp;
   color: white;
 }
-.midDown {
-    align: bottom;
-    color: white;
-    width:300px;
-    margin-right: 24px;
-    margin-bottom: 24px;
+.social {
+  grid-area: midDown;
+  color: white;
 }
-.right {
-  align: right;
-  width: 300px auto;
+.me {
+  grid-area: right;
+  width: 400px auto;
   opacity: 40%;
-}
+  margin: 0px 0px 0px 350px;
 }
 #yellowQuad a,
 #redQuad a,
