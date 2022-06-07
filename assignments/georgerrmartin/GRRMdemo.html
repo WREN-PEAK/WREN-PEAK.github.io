@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
     <style>
+    body {
+      background-image: url("./GRRMimages/marbleBkPort.jpg");
+      backgrouns-size: cover;
+    }
       #gridLayout {
         display: grid;
         grid-template-columns:1fr repeat(3, 333px) 1fr;
@@ -54,11 +58,21 @@
       #bannerContainer {
         grid-area: banner;
           }
+          #bannerContainer img {
+            width: 100%
+          }
       #cardsContainer {
         grid-area: cards;
+        display: flex;
+        }
+        #cardsContainer img {
+          flex-grow: 1;
         }
         aside {
           grid-area: aside;
+        }
+        #moreAppearancesContainer {
+
         }
         main {
           grid-area: blog;
@@ -92,13 +106,19 @@
             flex-direction: column;
             align-items: center;
           }
+          #cardsContainer {
+            flex-direction: column;
+          }
+          #cardsContainer img {
+            width: 100%;
+          }
         }
     </style>
   </head>
   <body>
     <div id="gridLayout">
       <header>
-        <img src="GRRMimages/shieldSpin.jpg" alt="shield">
+        <img src="GRRMimages/shieldLogo.png" alt="shield">
         <h1>GEORGE R. R. MARTIN</h1>
       </header>
       <nav>
@@ -112,9 +132,20 @@
           <li><a href="#">MERCHANDISE</a></li>
         </ul>
       </nav>
-      <section id="bannerContainer">BANNER</section>
-      <section id="cardsContainer">CARDS</section>
-      <aside>ASIDE</aside>
+      <section id="bannerContainer">BANNER
+        <image src="./GRRMimages/GRRMbanner.jpg" alt="Fire and Blood Book banner">
+      </section>
+      <section id="cardsContainer">CARDS
+        <img src="./GRRMimages/ 1">
+        <img src="./GRRMimages/ 2">
+        <img src="./GRRMimages/ 3">
+      </section>
+      <aside>ASIDE
+        <div id="moreAppearancesContainer">
+          <h3>NEXT APPEARANCE</h3>
+          <p class="yellow">August 26 - 28TH, 2022</p>
+          <p><span class="underline white">BUBICON 53</span><span class="..."
+      </aside>
       <main>BLOGPOSTS</main>
       <footer>FOOTER</footer>
       <div id="bottom"></div>
