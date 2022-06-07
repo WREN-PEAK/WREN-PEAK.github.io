@@ -69,9 +69,6 @@
       }
       nav {
         grid-area: navbar;
-        height: 26px;
-        /* border: 3px solid gray;
-        background: linear-gradient(lightgrey 10%, white 80%, lightgrey 10%); */
         }
       nav ul {
         background-color: lightgray;
@@ -107,11 +104,10 @@
       }
       #bannerContainer {
         grid-area: banner;
-        display: flex;
           }
       #bannerContainer img {
-        flex-grow: 1;
         border: lightgrey solid 1.5px;
+        width: 100%;
           }
       #cardsContainer {
         grid-area: cards;
@@ -137,8 +133,6 @@
         #blogContainer h2 {
           text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
           font-weight: normal;
-          /* font-variant: smallcaps; This did not work either */
-          /* text-size: adjust 0.75; did not make sm caps*/
         }
         #blogContainer h3 {
           color: #546984;
@@ -171,10 +165,10 @@
         }
         #bottom {
           grid-area: bottom;
+          text-align: center;
         }
         #bottom img {
           opacity: 90%;
-          padding: 0px 300px;
           width: 40%;
         }
         @media screen and (max-width: 1000px) {
@@ -191,7 +185,8 @@
             "bottom";
           }
           header {
-            text-align: center
+            text-align: center;
+            flex-direction: column;
           }
           header h1 {
             display: block:
@@ -246,9 +241,11 @@
       <header>
         <img id="shield" src="GRRMimages/shieldLogo.png" alt="shield">
         <h1>GEORGE R. R. MARTIN</h1>
-        <img class="icon" src="GRRMimages/facebookIcon.png" alt="fb button">
-        <img class="icon" src="GRRMimages/twitIcon.png" alt="fb button">
-        <img class="icon" src="GRRMimages/iconCrown.png" alt="fb button">
+        <div>
+          <img class="icon" src="GRRMimages/facebookIcon.png" alt="fb button">
+          <img class="icon" src="GRRMimages/twitIcon.png" alt="fb button">
+          <img class="icon" src="GRRMimages/iconCrown.png" alt="fb button">
+      </div>
       </header>
       <nav>
         <ul>
