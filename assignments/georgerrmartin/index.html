@@ -27,8 +27,7 @@
       #cardsContainer,
       aside,
       main,
-      footer,
-      #bottom {
+      footer {
         border: 3px solid gray;
         background-color: grey;
       }
@@ -166,6 +165,11 @@
         #bottom {
           grid-area: bottom;
         }
+        #bottom img {
+          opacity: 75%;
+          padding: 0px 300px;
+          width: 40%;
+        }
         @media screen and (max-width: 1000px) {
         #gridLayout {
           grid-template-columns: 1fr;
@@ -296,7 +300,7 @@
         &copy; 2022 GEORGE R. R. MARTIN ALL RIGHTS RESERVED.
       </footer>
       <div id="bottom">
-
+        <img src="./GRRMimages/doodadd.png" alt="silver ornament with a face on it">
       </div>
     </div>
   </body>
