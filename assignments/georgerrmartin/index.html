@@ -24,7 +24,6 @@
       }
       nav,
       #bannerContainer,
-      #cardsContainer,
       aside,
       main,
       footer {
@@ -38,7 +37,11 @@
         padding: 12px;
         justify-content: space-between;
         align-items: center;
-        /* background: linear-gradient(lightgrey, white 50%, lightgrey); */
+      }
+      #cardsContainer {
+        border: 3px solid gray;
+        background-color: grey;
+        opacity: 80%;
       }
       @keyframes shieldSpin {
         0%, 100% {
@@ -155,12 +158,16 @@
         footer {
           grid-area: footer;
           background: linear-gradient(darkgrey, white 20%, darkgrey);
-          color: black;
-          font-family: Arial, sans-serif;
-          opacity: 50%;
+          opacity: 40%;
           text-align: center;
+        }
+        footer h3 {
+          color: black;
+          opacity: 100%;
+          font-family: Arial, sans-serif;
           font-size: 12px;
-          padding: 6px;
+          letter-spacing: 3px;
+          padding: 0px;
         }
         #bottom {
           grid-area: bottom;
@@ -297,7 +304,7 @@
         <img src="GRRMimages/notblogIcon.png" alt="Blog Navigation Icon">
       </main>
       <footer>
-        &copy; 2022 GEORGE R. R. MARTIN ALL RIGHTS RESERVED.
+        <h3>&copy; 2022 GEORGE R. R. MARTIN ALL RIGHTS RESERVED.</h3>
       </footer>
       <div id="bottom">
         <img src="./GRRMimages/doodadd.png" alt="silver ornament with a face on it">
