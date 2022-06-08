@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>MY FORM</title>
+    <style>
+    body {
+      background-image: url("../../images/nightScape.jpg");
+      background-size: cover;
+    }
+
+    </style>
+  </head>
+  <body>
+    <form action="submission_action.php">
+      <fieldset>
+        <legend>My Form Field</legend>
+        <h4>FULL NAME</h4>
+        <div id="NameContainer" class="textInput">
+          <label for="NameId">first and last name</label>
+          <input type="text" id="NameId" name="Name">
+      </div>
+      <div id="emailContainer" class="textInput">
+        <label for="emailId">EMAIL:</label>
+        <input type="text" id="emailId" name="email">
+      </div>
+      <div id="emailContainer" class="textInput">
+        <label for="emailId">email:</label>
+        <input type="text" id="emailId" name="email">
+      </div>
+
+        <h2>Radio Inputs</h2>
+        <p>What program are you in?</p>
+          <div>
+            <input type="radio" id="raspRadio" name="program"
+            value="rasp">
+            <label for="raspRadio">
+              Recording Arts and Show Production
+          </label>
+        </div>
+        <div>
+          <input type="radio" id="dfvpRadio" name="program"
+          value="dfvp">
+          <label for="dfvpRadio">
+            Digital Filmaking and Video Production
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="gdwdpRadio" name="program"
+        value="gdwd">
+          <label for="gdwdRadio">
+            Graphic Design and Web Development
+        </label>
+      </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

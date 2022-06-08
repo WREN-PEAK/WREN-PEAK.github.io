@@ -345,7 +345,7 @@ footer {
 #tealQuad:hover {
 opacity: 90%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (minmax: 480px) {
   header img {
     width: 240px;
   }
@@ -355,13 +355,6 @@ opacity: 90%;
   ul li a {
     font-size: 13px;
   }
-  /* .pageGrid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "sidenav"
-    "content";
-    text-align: center;
-  } */
   footer {
     text-align: center;
   }

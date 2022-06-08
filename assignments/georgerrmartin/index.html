@@ -8,7 +8,7 @@
     <style>
     body {
       background-image: url("./GRRMimages/MB.jpg");
-      backgrouns-size: cover;
+      background-size: cover;
     }
       #gridLayout {
         display: grid;
@@ -149,12 +149,6 @@
           grid-area: blog;
           padding: 12px 24px;
         }
-        footer {
-          grid-area: footer;
-          background: linear-gradient(darkgrey, white 20%, darkgrey);
-          opacity: 40%;
-          text-align: center;
-        }
         footer h3 {
           color: black;
           opacity: 100%;
@@ -162,6 +156,12 @@
           font-size: 12px;
           letter-spacing: 3px;
           padding: 0px;
+        }
+        footer {
+          grid-area: footer;
+          background: linear-gradient(darkgrey, white 20%, darkgrey);
+          opacity: 60%;
+          text-align: center;
         }
         #bottom {
           grid-area: bottom;
@@ -202,38 +202,6 @@
             width: 100%;
           }
         }
-        /* what I added that is not working */
-        /* @media screen and (max-width: 480px) {
-          #gridLayout {
-            grid-template-columns: 1fr;
-            grid-template-areas:
-            "header"
-            "navbar"
-            "banner"
-            "blog"
-            "cards"
-            "aside"
-            "footer"
-            "bottom";
-          }
-          header,
-          nav,
-          section id="bannerContainer",
-          section id="cardsContainer",
-          aside,
-          main,
-          footer {
-            padding: 18px;
-          }
-          header,
-          nav {
-            text-align: center;
-          }
-          header h1 {
-            font-size: 24px;
-            margin: 0px;
-          }
-        } */
     </style>
   </head>
   <body>
