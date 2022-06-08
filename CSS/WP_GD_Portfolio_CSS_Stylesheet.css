@@ -55,7 +55,7 @@ section,
   contactGrid > img {
   position: absolute;
   left: 50%;
-  transform: translateX(-45%) translateY(14%);
+  transform: translateX(-45%) translateY(7%);
   z-index: 10;
 }
 #quadContainer {
@@ -319,19 +319,30 @@ footer {
   margin: 4px 10px 0px 140px;
 }
 .text {
-  grid-area: midUp;
+  grid-area: MidUp;
   color: white;
 }
 .social {
-  grid-area: midDown;
+  grid-area: MidDown;
   color: white;
 }
 .me {
   grid-area: right;
   width: 400px auto;
   opacity: 40%;
-  margin: 0px 0px 0px 350px;
+  margin: 0px 0px 0px 50px;
 }
+#socialCon {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#socialCon a {
+  flex-basis: 50%;
+  margin-bottom: 18px;
+
+}
+
 #yellowQuad a,
 #redQuad a,
 #blueQuad a,
@@ -345,7 +356,7 @@ footer {
 #tealQuad:hover {
 opacity: 90%;
 }
-@media screen and (minmax: 480px) {
+@media screen and (max-width: 480px) {
   header img {
     width: 240px;
   }
@@ -359,9 +370,10 @@ opacity: 90%;
     text-align: center;
   }
   section > img {
-    transform: translateX(-50%) translateY(-6%) scale(0.7);
+    transform: translateX(-50%) translateY(-6%) scale(0.5);
     z-index: 10;
   }
+
   #yellowQuad,
   #redQuad,
   #blueQuad,
