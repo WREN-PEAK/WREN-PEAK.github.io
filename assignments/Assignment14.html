@@ -2,56 +2,67 @@
 <html lang="en-US">
   <head>
     <title>MY FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montaga&display=swap" rel="stylesheet">
     <style>
-    body {
-      background-image: url("../../images/nightScape.jpg");
+      body {
+      background-image: url(../images/swans.jpg);
       background-size: cover;
+      margin: 0;
+      height: 100vh;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+      display: flex
+      align-items: center;
+      justify-content: center
+      overflow: hidden;
+      font-family: 'Anton', sans-serif;
+    }
+    .container {
+      background-image: url(/../../../GRRMimages/MB.jpg);
+      background-size:    ;
+    }
+    .inputs input {
+      display: block
+      width: 100%;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      background: #d9ebf8;
+      padding: 10px;
+      padding-left: 20px;
+      height: 50px;
+      font-size: 14px
+      border-radius: 50px;
+      box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    }
+    #button {
+
+    }
+    .radioS {
+
     }
 
     </style>
   </head>
   <body>
-    <form action="submission_action.php">
-      <fieldset>
-        <legend>My Form Field</legend>
-        <h4>FULL NAME</h4>
-        <div id="NameContainer" class="textInput">
-          <label for="NameId">first and last name</label>
-          <input type="text" id="NameId" name="Name">
-      </div>
-      <div id="emailContainer" class="textInput">
-        <label for="emailId">EMAIL:</label>
-        <input type="text" id="emailId" name="email">
-      </div>
-      <div id="emailContainer" class="textInput">
-        <label for="emailId">email:</label>
-        <input type="text" id="emailId" name="email">
-      </div>
-
-        <h2>Radio Inputs</h2>
-        <p>What program are you in?</p>
-          <div>
-            <input type="radio" id="raspRadio" name="program"
-            value="rasp">
-            <label for="raspRadio">
-              Recording Arts and Show Production
-          </label>
+    <form action="login_action.php">
+      <!-- <fieldset> -->
+        <div class="container">
+          <div class="inputs">
+            <Label>FULL NAME</label>
+            <input type="text" placeholder="first and last name">
+            <label>EMAIL</label>
+            <input type="text" placeholder="example@gmail.com">
+            <label>PASSWORD</label>
+            <input type="text" placeholder="min 6 charaters long">
+          </div>
+          <div id="button"></div>
+          <div class="radioS"></div>
         </div>
-        <div>
-          <input type="radio" id="dfvpRadio" name="program"
-          value="dfvp">
-          <label for="dfvpRadio">
-            Digital Filmaking and Video Production
-        </label>
-      </div>
-      <div>
-        <input type="radio" id="gdwdpRadio" name="program"
-        value="gdwd">
-          <label for="gdwdRadio">
-            Graphic Design and Web Development
-        </label>
-      </div>
-      </fieldset>
+
+      <!-- </fieldset> -->
     </form>
   </body>
 </html>
