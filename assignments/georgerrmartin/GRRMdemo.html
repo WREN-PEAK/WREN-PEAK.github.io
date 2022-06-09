@@ -40,6 +40,9 @@
         display: inline-block;
         font-family: 'Montaga', serif;
       }
+      #socialSection {
+        text-align: right;
+      }
       nav {
         grid-area: navbar;
       }
@@ -102,6 +105,9 @@
           header h1 {
             display: block;
           }
+          #socialSection {
+            text-align: center;
+          }
           nav ul {
             flex-direction: column;
             align-items: center;
@@ -120,6 +126,16 @@
       <header>
         <img src="GRRMimages/shieldLogo.png" alt="shield">
         <h1>GEORGE R. R. MARTIN</h1>
+
+        <div id="socialSection">
+          <form>
+            <input type="text" id="searchbar" name="searchQuery"
+            placeholder="Search...">
+            <input type="submit" id="searchButton" value="SEARCH">
+          </form>
+        </div>
+
+
       </header>
       <nav>
         <ul>
