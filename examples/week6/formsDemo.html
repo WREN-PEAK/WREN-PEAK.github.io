@@ -12,6 +12,8 @@
       padding: 8px;
       width: 200px;
     }
+    /* CSS way of removing fugly orange rule
+    around boxes when you click on them */
     .textInput input:focus-visible {
       outline: 0;
       background-color: skyblue;
@@ -43,6 +45,9 @@
       margin-right: 12px;
       cursor: pointer;
     }
+    /* CSS psuedo class below input:focus-visable
+    way of removing fugly orange rule
+    around boxes when you click on them */
     #buttonContainer input:focus-visable {
       outline: 0;
     }
@@ -54,9 +59,12 @@
       cursor: pointer;
       background: linear-gradient(to bottom, pink, orange);
     }
+    /* CSS pseudo class needed to reset form fields */
     #buttonContainer input[type=reset]:active {
       background: linear-gradient(to bottom, orange, pink);
     }
+    /* this CSS input alows info to be sent
+    to the back end where it is collected. */
     #buttonContainer input[type=submit] {
       border: 0;
       border-radius: 8px;
@@ -74,9 +82,11 @@
     <form action="submission_action.php">
       <fieldset>
         <legend>Form Fields</legend>
+
+        /* html for text filed inputs */
+
         <h2>Text Input</h2>
         <p>What Is Your Name?</p>
-
         <div id="firstNameContainer" class="textInput">
           <label for="firstNameId">First Name:</label>
           <input type="text" id="firstNameId" name="firstName">
@@ -85,8 +95,6 @@
         <label for="lastNameId">Last Name:</label>
         <input type="text" id="lastNameId" name="lastName">
       </div>
-
-
       <h2>Textarea Input</h2>
       <div>
       <label for="codeFeelingsId">
@@ -94,6 +102,7 @@
         <textarea id="codeFeelingsId" name="codeFeelings">Default Text</textarea>
       </div>
 
+      /* HTML for radio input buttons */
 
         <h2>Radio Inputs</h2>
         <p>What program are you in?</p>
@@ -119,6 +128,8 @@
       </label>
     </div>
 
+    /* HTML for checkbox inputs */
+
       <h2>Checkbox Input</h2>
       <p>How do you get to class?</p>
       <div>
@@ -138,6 +149,8 @@
         <label for="bedCheckbox">I roll out of bed and open my laptop</label>
       </div>
 
+      /* HTML for Date and Time inputs */
+
       <h2>Date / Time Input</h2>
       <div>
         <label for="dateId">When is your Birthday?</label>
@@ -147,6 +160,8 @@
         <label for="timeId">When do you wake up?</label>
         <input type="time" id="timeId" name="wakeup">
       </div>
+
+      /* HTML for Dropdown Inputs */
 
         <h2>Dropdown Input (select)</h2>
         <div>
@@ -160,6 +175,8 @@
             <option value="dairy">Dairy</option>
           </select>
         </div>
+
+        /* HTML for Button Inputs */
 
           <h2>Button Inputs</h2>
           <div id="buttonContainer">

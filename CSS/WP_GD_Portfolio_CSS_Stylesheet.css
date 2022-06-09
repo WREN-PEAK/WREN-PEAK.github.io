@@ -1,6 +1,11 @@
 body {
     font-family: Verdana, sans-serif;
 }
+#pageCon {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
 header {
   background-color: #161032;
   padding-bottom: 0px;
@@ -316,7 +321,7 @@ footer {
 }
 .logo {
   grid-area: left;
-  margin: 4px 10px 0px 140px;
+  margin: 4px 10px 0px 10px;
 }
 .text {
   grid-area: MidUp;
@@ -335,6 +340,7 @@ footer {
 #socialCon {
   display: flex;
   flex-wrap: wrap;
+  max-width: 250px;
 }
 #socialCon a {
   flex-basis: 50%;
@@ -349,6 +355,10 @@ footer {
 .social h3,
 .text h3 {
   text-shadow: 2px 2px 4px black;
+}
+.text h3 a {
+  color: white;
+  text-decoration: none;
 }
 #yellowQuad a,
 #redQuad a,
@@ -383,6 +393,25 @@ opacity: 90%;
  .me img {
    width: 100%;
  }
+ #contactGrid {
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-areas:
+   "left MidUp"
+   "MidDown MidDown";
+  }
+  .me {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .logo {
+    z-index: 1;
+  }
+  .social {
+    z-index: 1;
+  }
+  .text {
+    z-index: 1;
+  }
 
   #yellowQuad,
   #redQuad,
@@ -398,5 +427,4 @@ opacity: 90%;
   #tealQuad img {
     height: 200px;
   }
-
 }
