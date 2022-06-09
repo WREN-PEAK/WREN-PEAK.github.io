@@ -335,14 +335,11 @@ footer {
 #socialCon {
   display: flex;
   flex-wrap: wrap;
-
 }
 #socialCon a {
   flex-basis: 50%;
   margin-bottom: 18px;
-
 }
-
 #yellowQuad a,
 #redQuad a,
 #blueQuad a,
@@ -358,7 +355,7 @@ opacity: 90%;
 }
 @media screen and (max-width: 480px) {
   header img {
-    width: 240px;
+    width: 140px;
   }
   nav ul {
     text-align: center;
@@ -373,6 +370,9 @@ opacity: 90%;
     transform: translateX(-50%) translateY(-6%) scale(0.5);
     z-index: 10;
   }
+ .me img {
+   width: 100%;
+ }
 
   #yellowQuad,
   #redQuad,
