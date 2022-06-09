@@ -340,6 +340,16 @@ footer {
   flex-basis: 50%;
   margin-bottom: 18px;
 }
+#socialCon img {
+  box-shadow: 4px 4px 4px black;
+}
+.me img {
+  box-shadow: 8px 8px 10px black;
+}
+.social h3,
+.text h3 {
+  text-shadow: 2px 2px 4px black;
+}
 #yellowQuad a,
 #redQuad a,
 #blueQuad a,
