@@ -1,5 +1,15 @@
+
+
+* {
+  box-sizing: border-box;
+}
 body {
     font-family: Verdana, sans-serif;
+    background-image: url("../images/blue.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
 }
 #pageCon {
   max-width: 1280px;
@@ -240,9 +250,13 @@ section,
   color: black;
   font-size: medium;
 }
+#awards h5 {
+line-height: 80%;
+}
 #awards p {
   color: black;
   font-size: 12px;
+  line-height: 0%;
 }
 li {
   color: black;
@@ -295,7 +309,6 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 24px;
 }
 .picGallery img {
   height: 250px;
@@ -307,14 +320,13 @@ footer {
   background-color: white;
   font-size: 14px;
   grid-area: content;
-  padding: 150px 300px 0px 24px;
-  width: 350px;
+  padding: 150px 30px 0px 24px;
+  width: 100%;
 }
 /* CSS for contact page */
   #contactGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(33.33%, auto);
   grid-template-areas:
   "left MidUp   right"
   "left MidDown right";
@@ -360,6 +372,10 @@ footer {
   color: white;
   text-decoration: none;
 }
+.text h5 a {
+  color: white;
+  text-decoration: none;
+}
 #yellowQuad a,
 #redQuad a,
 #blueQuad a,
@@ -374,8 +390,9 @@ footer {
 opacity: 90%;
 }
 @media screen and (max-width: 480px) {
+
   header img {
-    width: 140px;
+    width: 240px;
   }
   nav ul {
     text-align: center;
@@ -394,23 +411,61 @@ opacity: 90%;
    width: 100%;
  }
  #contactGrid {
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(1, 1fr);
    grid-template-areas:
-   "left MidUp"
-   "MidDown MidDown";
+   "left"
+   "MidUp"
+   "MidDown";
+   padding-bottom: 24px;
   }
   .me {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    margin: 0px;
   }
   .logo {
     z-index: 1;
+    width: 100px;
+  }
+  .logo img {
+    width: 140%;
   }
   .social {
     z-index: 1;
+    margin-top: 24px;
+  }
+  .social h3,
+  .text h3 {
+    font-size: 17px;
+    Margin-left: 10px;
+
+  }
+  .social img {
+    width: 80px;
+    Margin-right: 0px;
+  }
+  .social h3 {
+    margin-left: 10px;
+  }
+  .text h5 {
+    font-size: 14px;
+    line-height: 40%;
   }
   .text {
     z-index: 1;
+  }
+  .text a {
+    margin-left: 10px;
+    line-height: 40%;
+  }
+  .text h3 a {
+    margin-left: 0px;
+  }
+  #socialCon a {
+    flex-basis: 40%;
+  }
+  #socialCon {
+    margin-left: 10px;
   }
 
   #yellowQuad,
