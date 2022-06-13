@@ -406,7 +406,6 @@ opacity: 90%;
   }
   section > img {
     transform: translateX(-50%) translateY(-6%) scale(0.5);
-    z-index: 10;
   }
  .me img {
    width: 100%;
@@ -439,7 +438,6 @@ opacity: 90%;
   .text h3 {
     font-size: 17px;
     Margin-left: 10px;
-
   }
   .social img {
     width: 80px;
