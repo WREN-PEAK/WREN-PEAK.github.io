@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>MY FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montaga&display=swap" rel="stylesheet">
+    <style>
+      body {
+      background-image: url(../images/swans.jpg);
+      background-size: cover;
+      background-position: center center;
+      margin: 0;
+      height: 100vh;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: 'Anton', sans-serif;
+    }
+    .container {
+      background-image: url(../images/MB.jpg);
+      padding: 80px 70px;
+      border-radius: 50px;
+      opacity: 90%;
+      Box-shadow: 10px 10px 6px #222222;
+    }
+    .inputs input {
+      display: block;
+      width: 300px;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      background: #d9ebf8;
+      margin: 12px 0px;
+      padding: 10px;
+      padding-left: 20px;
+      height: 50px;
+      font-size: 14px;
+      border-radius: 50px;
+      box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    }
+    #buttonCon input:focus-visible {
+      outline: 0;
+    }
+    #buttonCon input {
+      width: 300px;
+      padding: 16px;
+      margin: 20px 0px;
+      Border: 0;
+      border-radius: 50px;
+      background-color: black;
+      color: white;
+      font-size: 14px;
+      box-shadow: 4px 4px 6px #222222;
+    }
+    .radioPair {
+      display: inline-block;
+      margin: 0px 12px;
+    }
+    #radioCon {
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="login_action.php">
+        <div class="container">
+          <div class="inputs">
+            <Label>FULL NAME</label>
+            <input type="text" name="fullName" placeholder="first and last name">
+            <label>EMAIL</label>
+            <input type="text" name="email" placeholder="example@gmail.com">
+            <label>PASSWORD</label>
+            <input type="text" name="passWord" placeholder="min 6 charaters long">
+          </div>
+          <div id="buttonCon">
+            <input type="submit" value="LOGIN">
+          </div>
+          <div class="radioCon">
+            <div class="radioPair">
+              <input type="radio" id="emailRadio" name="connect"
+              value="email">
+              <label for="emailRadio">
+                Email Me
+              </label>
+            </div>
+            <div class="radioPair">
+              <input type="radio" id="callRadio" name="connect"
+              value="call">
+              <label for="callRadio">
+                Call Me
+            </label>
+          </div>
+          <div class="radioPair">
+            <input type="radio" id="textRadio" name="connect"
+            value="text">
+            <label for="textRadio">
+              Text Me
+            </label>
+          </div>
+          </div>
+        </div>
+    </form>
+  </body>
+</html>
