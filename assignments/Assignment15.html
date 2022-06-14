@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>JS COUNT DOWN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montaga&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0px;
+      }
+      #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/Phoenix.png);
+        background-size: cover;
+        height: 920px;
+      }
+      #title {
+        display: flex
+        justify-content: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 90px;
+        line-height: 120%;
+        color: #00b7af;
+        text-align: top;
+        margin: 40px;
+        Margin-bottom: 500px;
+        text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.7);
+      }
+      #hero img {
+        display: flex;
+        justify-content: center;
+                height: 500px;
+      }
+      #countdown {
+        display: inline-block;
+        color: #eb1507;
+        font-family: 'Anton', sans-serif;
+        font-size: 40px;
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+        line-height: 120%;
+        margin: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hero">
+      <h1 id="title">When The Phoenix Flies</h1>
+      <img src="../images/FOL-LOGO.png" alt="wren peak logo phoenix-peacock">
+      <h1 id="countdown">PLACEHOLDER</h1>
+    </div>
+    <script type="text/javascript">
+      let deadline = new Date('January 1, 2023 16:00:00');
+      let countdown = document.getElementById("countdown");
+      countdown.innerHTML = "";
+
+      function setCountdown() {
+      let now = new Date();
+      /* # of milliseconds between deadline and now */
+      let timeLeft = deadline.getTime() - now.getTime();
+
+      let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      let hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      let minutes = Math.floor(
+        (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      let seconds = Math.floor(
+        (timeLeft % (1000 * 60)) / 1000
+      );
+
+      countdown.innerHTML =
+        `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds left`;
+    }
+      setInterval(setCountdown, 1000);
+    </script>
+  </body>
+</html>
