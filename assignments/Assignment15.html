@@ -16,6 +16,7 @@
         background-image: url(../images/Phoenix.png);
         background-size: cover;
         height: 1000px;
+        position: relative;
       }
       #title {
         display: flex
@@ -24,15 +25,13 @@
         font-size: 90px;
         line-height: 120%;
         color: #00b7af;
-        text-align: top;
         margin: 40px;
-        Margin-bottom: 500px;
+        position: relative;
+        top: -300px;
         text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.7);
       }
       #hero img {
-        display: flex;
-        justify-content: center;
-                height: 500px;
+        height: 500px;
       }
       #countdown {
         display: inline-block;
@@ -52,7 +51,7 @@
       <h1 id="countdown">PLACEHOLDER</h1>
     </div>
     <script type="text/javascript">
-      let deadline = new Date('January 1, 2023 16:00:00');
+      let deadline = new Date('January 1, 2023 12:00:00');
       let countdown = document.getElementById("countdown");
       countdown.innerHTML = "";
 
