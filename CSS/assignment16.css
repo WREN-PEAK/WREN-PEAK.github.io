@@ -1,10 +1,10 @@
 #slideshow {
-  height: 400px;
+  height: 800px;
   text-align: center;
 }
 
 .slideshowImage {
-  height: 385px;
+  height: 780px;
   box-shadow: 6px 6px 8px;
 }
 
