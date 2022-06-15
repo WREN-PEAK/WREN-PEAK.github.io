@@ -12,6 +12,7 @@ body {
   text-align: center;
   background-color: #2B2D42;
 }
+
 #previous {
   background-color: #161032;
   color: white;
@@ -28,9 +29,9 @@ body {
   padding: 10px 23px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
-#previous:focus-visible {
+/* #previous:focus-visible {
   outline: 0;
 }
 #next:focus-visible {
   outline: 0;
-}
+} */

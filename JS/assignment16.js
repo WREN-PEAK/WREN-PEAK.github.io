@@ -4,6 +4,7 @@ let slide3 = document.getElementById("slide3");
 let slide4 = document.getElementById("slide4");
 let slide5 = document.getElementById("slide5");
 let slide6 = document.getElementById("slide6");
+debugger;
 
 let slides = [slide1, slide2, slide3, slide4, slide5, slide6];
 
