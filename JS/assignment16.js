@@ -24,7 +24,8 @@ function showCurrentSlide() {
     let loopSlide = slides[i];
     if (i != currentSlideIndex) {
       loopSlide.style.display = "none";
-    } else {
+    }
+    else {
       loopSlide.style.display = "inline-block";
     }
   }
