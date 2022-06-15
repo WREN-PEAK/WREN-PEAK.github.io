@@ -1,0 +1,34 @@
+#slideshow {
+  height: 400px;
+  text-align: center;
+}
+
+.slideshowImage {
+  height: 385px;
+  box-shadow: 6px 6px 8px;
+}
+
+body {
+  text-align: center;
+  background-color: #2B2D42;
+}
+#previous {
+  background-color: #161032;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  padding: 12px;
+}
+#next {
+  background-color: #F8333C;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  padding: 10px 23px;
+}
+#previous:focus-visible {
+  outline: 0;
+}
+#next:focus-visible {
+  outline: 0;
+}
