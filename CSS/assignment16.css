@@ -1,11 +1,12 @@
+
 #slideshow {
   height: 800px;
   text-align: center;
 }
 
 .slideshowImage {
-  height: 780px;
-  box-shadow: 6px 6px 8px;
+  height: 775px;
+  box-shadow: 20px 20px 30px;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   background-color: #161032;
   color: white;
   border: none;
-  border-radius: 30%;
+  border-radius: 50%;
   padding: 12px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -25,7 +26,7 @@ body {
   background-color: #F8333C;
   color: white;
   border: none;
-  border-radius: 30%;
+  border-radius: 50%;
   padding: 10px 23px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
