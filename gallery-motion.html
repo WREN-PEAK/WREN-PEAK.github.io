@@ -10,7 +10,6 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="aboutMe.html">About Me</a></li>
           <li><a href="contacts.html">Contact</a></li>
         </ul>
@@ -22,13 +21,13 @@
         <div class="pageGrid">
           <div class="sidenav">
             <div class="picGallery">
-                <img src="images/logoDance.png">
-                <img src="images/spiritSky.png">
-                <img src="images/VWparis.png">
-                <img src="images/movinSue.png">
-                <img src="images/vegAd.png">
-                <img src="images/donut.png">
-                <img src="images/tigger.png">
+                <img src="images/logoDance.png" onclick="showSlide(0)">
+                <img src="images/spiritSky.png" onclick="showSlide(1)">
+                <img src="images/VWparis.png" onclick="showSlide(2)">
+                <img src="images/movinSue.png" onclick="showSlide(3)">
+                <img src="images/vegAd.png" onclick="showSlide(4)">
+                <img src="images/donut.png" onclick="showSlide(5)">
+                <img src="images/tigger.png" onclick="showSlide(6)">
             </div>
           </div>
           <div class="content">
@@ -75,6 +74,21 @@
       <footer>
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
-    </div>
+        <div id="popupContainer">
+
+          <input
+            type="button"
+            id="previous"
+            value="Previous"
+            onclick="showPreviousSlide()">
+          <input
+            type="button"
+            id="next"
+            value="Next"
+            onclick="showNextSlide()">
+
+        </div>
+      </div>
+    <script type="text/javascript" src="../../js/slideshow.js"></script>
   </body>
 </html>

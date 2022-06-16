@@ -391,6 +391,20 @@ footer {
 #tealQuad:hover {
 opacity: 90%;
 }
+/* CSS for Slide Show */
+/* #slideshow {
+  height: 400px;
+  text-align: center;
+}
+
+.slideshowImage {
+  height: 385px;
+}
+
+body {
+  text-align: center;
+} */
+/* CSS for Mobile View */
 @media screen and (max-width: 480px) {
 
   header img {

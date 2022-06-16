@@ -22,13 +22,14 @@
         <div class="pageGrid">
           <div class="sidenav">
             <div class="picGallery">
-                <img src="images/fallCover.png">
-                <img src="images/fallSpread.png">
-                <img src="images/archSpread.png">
-                <img src="images/archEnd.png">
-                <img src="images/Liv1.jpg">
-                <img src="images/SPLcover2.png">
-                <img src="images/SPLspread2.png">
+                <img src="images/fallCover.png" onclick="showSlide(0)">
+                <img src="images/fallSpread2.png"onclick="showSlide(1)">
+                <img src="images/fallSpread.png"onclick="showSlide(2)">
+                <img src="images/archSpread.png" onclick="showSlide(3)">
+                <img src="images/archEnd.png" onclick="showSlide(4)">
+                <img src="images/Liv1.jpg" onclick="showSlide(5)">
+                <img src="images/SPLcover2.png" onclick="showSlide(6)">
+                <img src="images/SPLspread2.png" onclick="showSlide(7)">
             </div>
           </div>
           <div class="content">
@@ -70,6 +71,21 @@
       <footer>
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
-    </div>
+        <div id="popupContainer">
+
+          <input
+            type="button"
+            id="previous"
+            value="Previous"
+            onclick="showPreviousSlide()">
+          <input
+            type="button"
+            id="next"
+            value="Next"
+            onclick="showNextSlide()">
+
+        </div>
+      </div>
+    <script type="text/javascript" src="../../js/slideshow.js"></script>
   </body>
 </html>

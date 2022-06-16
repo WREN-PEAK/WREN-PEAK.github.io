@@ -38,3 +38,8 @@ function showPreviousSlide() {
   currentSlideIndex--;
   showCurrentSlide();
 }
+
+function showSlide(slideIndex) {
+  currentSlideIndex = slideIndex;
+  showCurrentSlide();
+}
