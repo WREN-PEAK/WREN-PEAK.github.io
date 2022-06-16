@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>JQUERY POPUP MENU</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background-image: url(../images/blue.png);
+      }
+      body h1 {
+        color: lightblue;
+        font-family: Arial, sans-serif;
+        font-size: 80px;
+        padding: 36px;
+      }
+      p {
+        padding: 10px 36px;
+        color: white;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .popupTrigger {
+        cursor: pointer;
+      }
+      .popupTrigger h2 {
+        color: lightblue;
+        font-family: Arial, sans-serif;
+        padding: 10px 36px;
+      }
+      #popupContainer {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+      #popupBackground {
+        background: linear-gradient(to bottom right, #a62c42, #4b3631);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.75;
+      }
+      #popup {
+        background-image: url("../images/bells.png");
+        box-shadow: inset 20px 20px 12px #944311, inset -12px -12px 12px #161032;
+        color: white;
+        background-size: cover;
+        border: 2px solid #161032;
+        border-radius: 500px;
+        padding: 100px 100px;
+        position: relative;
+        box-shadow: 26px 26px 30px rgba(0,0,0,0.5);
+        text-align: center;
+        min-width: 400px;
+        z-index: 1;
+      }
+      #popup h2 {
+        text-shadow: 4px 4px 4px rgba(22,16,50,0.9);
+        font-size: 50px;
+      }
+      h3 {
+        font-size: 30px;
+        text-shadow: 4px 4px 4px rgba(22,16,50,0.9);
+      }
+      #popup .closePopup {
+        cursor: pointer;
+        margin-top: 40px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <div class="popupTrigger"><h2>Click on me to open a popup</h2></div>
+    <div id="popupContainer">
+      <div id="popupBackground" class="closePopup"></div>
+      <div id="popup">
+        <h2>Congrats!<br> You opened a popup!</h2>
+        <h3 class="closePopup">Close</h3>
+      </div>
+    </div>
+    <p>
+      Si aute eram noster eiusmod eu dolore consequat quibusdam.
+      Se ab reprehenderit, export praesentibus ullamco elit
+      incididunt, de se quis malis amet sed hic legam ita quae,
+      aliqua singulis et cupidatat, quorum nam ad quis mentitum,
+      non proident tractavissent, duis relinqueret cupidatat
+      labore probant. Ubi do dolor eiusmod ea se export
+      exercitation, qui occaecat a ullamco, ingeniis cillum quis
+      possumus veniam.Pariatur o cillum proident, elit constias ad
+      domesticarum ita ipsum distinguantur laboris quae admodum,
+      do sunt philosophari, quo ex dolor quamquam ita iis aliqua
+      anim cillum cupidatat, labore deserunt hic proident ea non
+      veniam appellat arbitrantur.
+      </p>
+    <p>
+      Sint fabulas domesticarum, illum eruditionem ullamco veniam
+      voluptate, minim ullamco de reprehenderit quo ita qui quae
+      commodo. O ne labore eiusmod. Ut esse ullamco illustriora.
+      Cillum quibusdam familiaritatem, te sed veniam quae minim,
+      tempor quamquam exquisitaque, hic culpa laboris.E laborum
+      adipisicing, quamquam id elit. Senserit nam constias, summis
+      est arbitror. Ullamco praetermissum ab constias, nulla a
+      occaecat, amet est o cillum incurreret, culpa ab id quid
+      commodo, quae exquisitaque deserunt tempor quamquam non se
+      in aute possumus, incididunt sunt laboris, minim arbitror ut
+      arbitrantur.
+      </p>
+    <p>
+      Ne et voluptatibus, est elit probant, quorum vidisse
+      illustriora, veniam occaecat et deserunt, o officia et
+      incididunt, et eram et tamen, ita do cillum malis fore si
+      summis ingeniis id appellat. Ab veniam sed eram, litteris o
+      sunt, elit relinqueret occaecat quid laboris, aut culpa ne
+      magna, mentitum legam excepteur ex ea fore labore eu fabulas
+      te cupidatat ne incurreret, quamquam dolore quae officia
+      quid.
+      </p>
+    <p>
+      Ne et voluptatibus, est elit probant, quorum vidisse
+      illustriora, veniam occaecat et deserunt, o officia et
+      incididunt, et eram et tamen, ita do cillum malis fore si
+      summis ingeniis id appellat. Ab veniam sed eram, litteris o
+      sunt, elit relinqueret occaecat quid laboris, aut culpa ne
+      magna, mentitum legam excepteur ex ea fore labore eu fabulas
+      te cupidatat ne incurreret, quamquam dolore quae officia
+      quid.
+      </p>
+    <p>
+      Si aute eram noster eiusmod eu dolore consequat quibusdam.
+      Se ab reprehenderit, export praesentibus ullamco elit
+      incididunt, de se quis malis amet sed hic legam ita quae,
+      aliqua singulis et cupidatat, quorum nam ad quis mentitum,
+      non proident tractavissent, duis relinqueret cupidatat
+      labore probant. Ubi do dolor eiusmod ea se export
+      exercitation, qui occaecat a ullamco, ingeniis cillum quis
+      possumus veniam.Pariatur o cillum proident, elit constias ad
+      domesticarum ita ipsum distinguantur laboris quae admodum,
+      do sunt philosophari, quo ex dolor quamquam ita iis aliqua
+      anim cillum cupidatat, labore deserunt hic proident ea non
+      veniam appellat arbitrantur.
+      </p>
+    <p>
+      Si aute eram noster eiusmod eu dolore consequat quibusdam.
+      Se ab reprehenderit, export praesentibus ullamco elit
+      incididunt, de se quis malis amet sed hic legam ita quae,
+      aliqua singulis et cupidatat, quorum nam ad quis mentitum,
+      non proident tractavissent, duis relinqueret cupidatat
+      labore probant. Ubi do dolor eiusmod ea se export
+      exercitation, qui occaecat a ullamco, ingeniis cillum quis
+      possumus veniam.Pariatur o cillum proident, elit constias ad
+      domesticarum ita ipsum distinguantur laboris quae admodum,
+      do sunt philosophari, quo ex dolor quamquam ita iis aliqua
+      anim cillum cupidatat, labore deserunt hic proident ea non
+      veniam appellat arbitrantur.
+      </p>
+    <script type="text/javascript">
+      $(".popupTrigger").click(
+      function() {
+        $("#popupContainer").addClass("popupOpen");
+      }
+      );
+      $(".closePopup").click(
+        function() {
+          $("#popupContainer").removeClass("popupOpen");
+        }
+      );
+    </script>
+  </body>
+</html>

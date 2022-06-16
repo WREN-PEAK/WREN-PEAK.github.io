@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>JQUERY POPUP MENU</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .popupTrigger {
+        cursor: pointer;
+      }
+      #popupContainer {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+      #popupBackground {
+        background: linear-gradient(to bottom right, lightgreen, gold);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.75;
+      }
+      #popup {
+        background-image: url("../../images/bells.png");
+        color: white;
+        border: 4px solid black;
+        border-radius: 24px;
+        padding: 36px;
+        position: relative;
+        text-align: center;
+        min-width: 400px;
+        z-index: 1;
+      }
+      #popup h1 {
+        text-shadow: 4px 4px 4px rgba(00,0,0,0.7);
+      }
+      #popup .closePopup {
+        cursor: pointer;
+        margin-top: 40px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <div class="popupTrigger">Click on me to open a popup</div>
+    <div id="popupContainer">
+      <div id="popupBackground" class="closePopup"></div>
+      <div id="popup">
+        <h1>Congrats! You opened a popup!</h1>
+        <h3 class="closePopup">Close</h3>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(".popupTrigger").click(
+      function() {
+        $("#popupContainer").addClass("popupOpen");
+      }
+      );
+      $(".closePopup").click(
+        function() {
+          $("#popupContainer").removeClass("popupOpen");
+        }
+      );
+    </script>
+  </body>
+</html>
