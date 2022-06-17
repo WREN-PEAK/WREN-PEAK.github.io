@@ -2,6 +2,7 @@
 <html lang="en-US">
   <head>
     <title>WREN PEAK</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/WP_GD_Portfolio_CSS_Stylesheet.css" rel="stylesheet">
   </head>
@@ -45,9 +46,9 @@
               <h4>Typographic Self Promotion Poster</h4>
                 <p>Creative Direction</p>
                 <p>Design Direction</p>
-                <h4>Moth Morphosis Logo Design</h4>
-                  <p>Creative Direction</p>
-                  <p>Design Direction</p>
+              <h4>Moth Morphosis Logo Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
               <h4>Wishtree Book Jacket Design</h4>
                 <p>Creative Direction</p>
                 <p>Design Direction</p>
@@ -87,20 +88,40 @@
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
         <div id="popupContainer">
-
-          <input
-            type="button"
-            id="previous"
-            value="Previous"
-            onclick="showPreviousSlide()">
-          <input
-            type="button"
-            id="next"
-            value="Next"
-            onclick="showNextSlide()">
-
+          <div id="popupBackground" class="closePopup"></div>
+          <div id="popup">
+            <div id="slideshow">
+              <img src="images/creatTypography.png" class="slideshowImage">
+              <img src="images/mothRust.png" class="slideshowImage">
+              <img src="images/wishBook.png" class="slideshowImage">
+              <img src="images/barrelBag.png" class="slideshowImage">
+              <img src="images/littleGrass.png" class="slideshowImage">
+              <img src="images/FOL-LOGO.png" class="slideshowImage">
+              <img src="images/catsRule.png" class="slideshowImage">
+              <img src="images/mermaid.png" class="slideshowImage">
+              <img src="images/moviePoster.png" class="slideshowImage">
+              <img src="images/zoo.png" class="slideshowImage">
+              <img src="images/paula1.png" class="slideshowImage">
+              <img src="images/paula2.png" class="slideshowImage">
+              <img src="images/paula3.png" class="slideshowImage">
+              <img src="images/paula4.png" class="slideshowImage">
+              <img src="images/paula5.png" class="slideshowImage">
+              <img src="images/paula6.png" class="slideshowImage">
+              <img src="images/paula7.png" class="slideshowImage">
+            </div>
+            <input
+              type="button"
+              id="previous"
+              value="Previous"
+              onclick="showPreviousSlide()">
+            <input
+              type="button"
+              id="next"
+              value="Next"
+              onclick="showNextSlide()">
+          </div>
         </div>
       </div>
-    <script type="text/javascript" src="../../js/slideshow.js"></script>
+    <script type="text/javascript" src="JS/slideshowGallery.js"></script>
   </body>
 </html>
