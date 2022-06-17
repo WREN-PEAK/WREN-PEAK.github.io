@@ -2,6 +2,7 @@
 <html lang="en-US">
   <head>
     <title>WREN PEAK</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/WP_GD_Portfolio_CSS_Stylesheet.css" rel="stylesheet">
   </head>
@@ -18,89 +19,166 @@
         <img src="images/wpgd-banner-font.png" alt="wren peak graphic designer">
       </header>
       <section>
-        <div class="pageGrid">
-          <div class="sidenav">
-            <div class="picGallery">
-                <img src="images/fallCover.png" onclick="showSlide(0)">
-                <img src="images/fallSpread2.png"onclick="showSlide(1)">
-                <img src="images/fallSpread.png"onclick="showSlide(2)">
-                <img src="images/archSpread.png" onclick="showSlide(3)">
-                <img src="images/archEnd.png" onclick="showSlide(4)">
-                <img src="images/Liv1.jpg" onclick="showSlide(5)">
-                <img src="images/SPLcover2.png" onclick="showSlide(6)">
-                <img src="images/SPLspread2.png" onclick="showSlide(7)">
-                <img src="images/brochureFIRST1.png" onclick="showSlide(8)">
-                <img src="images/brochureFIRST2.png" onclick="showSlide(9)">
-                <img src="images/purpleBook.png" onclick="showSlide(10)">
-                <img src="images/modeC.png" onclick="showSlide(11)">
-                <img src="images/mode2.png" onclick="showSlide(12)">
-                <img src="images/mode3.png" onclick="showSlide(13)">
-                <img src="images/arcCover.png" onclick="showSlide(14)">
-                <img src="images/arcSpan2.png" onclick="showSlide(15)">
-                <img src="images/arcSpan3.png" onclick="showSlide(16)">
-                <img src="images/arcSpan4.png" onclick="showSlide(17)">
-                <img src="images/arcSpan5.png" onclick="showSlide(18)">
-                <img src="images/brandC.png" onclick="showSlide(19)">
-                <img src="images/BranBook4.jpg" onclick="showSlide(20)">
-                <img src="images/BranBook6.jpg" onclick="showSlide(21)">
-                <img src="images/BranBook7.jpg" onclick="showSlide(22)">
-            </div>
-          </div>
-          <div class="content">
-            <div>
-              <h4>La Vié Fall Fashion Catalogue Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Accessory Photography</p>
-              <h4>Liv Tyler Editorial Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-              <h4>Then & Now Editorial Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Photography</p>
-              <h4>Short Pump Life Publication Design</h4>
-                <p>Creative Direction for Entire Magazine</p>
-                <p>Design Direction</p>
-              <h4>F.I.R.S.T. Institute Brand Brochure Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Light Copy Writing</p>
-              <h4>Wishtree Book Jacket Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Illustration</p>
-              <h4>Mode Home Catalogue Design & Brand</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-              <h4>ArcSpan Marketing Booklet & Logo Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-              <h4>Flying Out Loud Creative Brand Book Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Logo Design</p>
-            </div>
-          </div>
+        <div class="picGallery">
+          <img src="images/fallCover.png" onclick="showSlide(0)">
+          <img src="images/fallSpread2.png"onclick="showSlide(1)">
+          <img src="images/fallSpread.png"onclick="showSlide(2)">
+          <img src="images/archSpread.png" onclick="showSlide(3)">
+          <img src="images/archEnd.png" onclick="showSlide(4)">
+          <img src="images/Liv1.jpg" onclick="showSlide(5)">
+          <img src="images/SPLcover2.png" onclick="showSlide(6)">
+          <img src="images/SPLspread2.png" onclick="showSlide(7)">
+          <img src="images/brochureFIRST1.png" onclick="showSlide(8)">
+          <img src="images/brochureFIRST2.png" onclick="showSlide(9)">
+          <img src="images/purpleBook.png" onclick="showSlide(10)">
+          <img src="images/modeC.png" onclick="showSlide(11)">
+          <img src="images/mode2.png" onclick="showSlide(12)">
+          <img src="images/mode3.png" onclick="showSlide(13)">
+          <img src="images/arcCover.png" onclick="showSlide(14)">
+          <img src="images/arcSpan2.png" onclick="showSlide(15)">
+          <img src="images/arcSpan3.png" onclick="showSlide(16)">
+          <img src="images/arcSpan4.png" onclick="showSlide(17)">
+          <img src="images/arcSpan5.png" onclick="showSlide(18)">
+          <img src="images/brandC.png" onclick="showSlide(19)">
+          <img src="images/BranBook4.jpg" onclick="showSlide(20)">
+          <img src="images/BranBook6.jpg" onclick="showSlide(21)">
+          <img src="images/BranBook7.jpg" onclick="showSlide(22)">
+        </div>
       </section>
       <footer>
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
         <div id="popupContainer">
-
-          <input
-            type="button"
-            id="previous"
-            value="Previous"
-            onclick="showPreviousSlide()">
-          <input
-            type="button"
-            id="next"
-            value="Next"
-            onclick="showNextSlide()">
-
+          <div id="popupBackground" class="closePopup"></div>
+          <div id="popup">
+            <div id="slideshow">
+              <div class="slideshowImage">
+               <img src="images/fallCover.png">
+               <h4>La Vié Fall Fashion Catalogue Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+                <p>Accessory Photography</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/fallSpread2.png">
+              </div>
+              <div class="slideshowImage">
+                <img src="images/fallSpread.png">
+              </div>
+              <div class="slideshowImage">
+                <img src="images/archSpread.png">
+                <h4>Then & Now - Editorial Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+                <p>Photography</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/archEnd.png">
+                <h4>Little Grass Ranch Re-Brand</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/Liv1.jpg">
+                <h4>Liv Tyler - Editorial Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/SPLcover2.png">
+                <h4>Short Pump Life Publication Design</h4>
+                <p>Creative Direction for Entire Magazine</p>
+                <p>Design Direction</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/SPLspread2.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/brochureFIRST1.png">
+                <h4>F.I.R.S.T. Institute Brand Brochure Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+                <p>Slogan Copy Writing</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/brochureFIRST2.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/purpleBook.png">
+                <h4>Wishtree Book Jacket Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+                <p>llustration</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/modeC.png">
+                <h4>Mode Home Catalogue Design & Brand</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/mode2.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/mode3.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/arcCover.png">
+                <h4>ArcSpan Marketing Booklet & Logo Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/arcSpan2.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/arcSpan3.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/arcSpan4.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/arcSpan5.png">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/brandC.png">
+                <h4>Flying Out Loud Creative Brand Book Design</h4>
+                <p>Creative Direction</p>
+                <p>Design Direction</p>
+                <p>Logo Design</p>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/BranBook4.jpg">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/BranBook6.jpg">
+                <h4>Inside Spread</h4>
+              </div>
+              <div class="slideshowImage">
+                <img src="images/BranBook7.jpg">
+                <h4>Inside Spread</h4>
+              </div>
+            </div>
+            <input
+              type="button"
+              id="previous"
+              value="Previous"
+              onclick="showPreviousSlide()">
+            <input
+              type="button"
+              id="next"
+              value="Next"
+              onclick="showNextSlide()">
+          </div>
         </div>
       </div>
-    <script type="text/javascript" src="../../js/slideshow.js"></script>
+    <script type="text/javascript" src="JS/slideshowGallery.js"></script>
   </body>
 </html>
