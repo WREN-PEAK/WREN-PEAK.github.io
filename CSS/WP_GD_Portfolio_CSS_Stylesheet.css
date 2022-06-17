@@ -405,6 +405,11 @@ body {
   text-align: center;
 } */
 /* CSS for Mobile View */
+
+.content p {
+  line-height: 60%;
+}
+
 @media screen and (max-width: 480px) {
 
   header img {
