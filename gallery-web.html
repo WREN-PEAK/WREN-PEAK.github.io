@@ -2,6 +2,7 @@
 <html lang="en-US">
   <head>
     <title>WREN PEAK</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/WP_GD_Portfolio_CSS_Stylesheet.css" rel="stylesheet">
   </head>
@@ -18,92 +19,123 @@
         <img src="images/wpgd-banner-font.png" alt="wren peak graphic designer">
       </header>
       <section>
-        <div class="pageGrid">
-          <div class="sidenav">
-            <div class="picGallery">
-                <img src="images/LaVieAds.png" onclick="showSlide(0)">
-                <img src="images/SueAd.png" onclick="showSlide(1)">
-                <img src="images/SueKitchen.png" onclick="showSlide(2)">
-                <img src="images/AA1.png" onclick="showSlide(3)">
-                <img src="images/BT1.png" onclick="showSlide(4)">
-                <img src="images/3guys1.png" onclick="showSlide(5)">
-                <img src="images/styleGuide.png" onclick="showSlide(6)">
-                <img src="images/webAd.png" onclick="showSlide(7)">
-                <img src="images/honey1.png" onclick="showSlide(8)">
-                <img src="images/honey2.png" onclick="showSlide(9)">
-                <img src="images/littleGrass.png" onclick="showSlide(10)">
-                <img src="images/GRRMmain.png" onclick="showSlide(11)">
-                <img src="images/GRRMbig.png" onclick="showSlide(12)">
-            </div>
-          </div>
-          <div class="content">
-            <div>
-              <h4>La Vié Instagram Ad Campaign</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Logo Design</p>
-              <h4>Sue’s Kitchen Instagram Ad Campaign</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Food Illustrations</p>
-              <h4>Alaskan Airlines – Educationally Re-Designed Mobile App</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Light Copy Writing</p>
-              <h4>Butterfly Thrive Mobile App Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-              <h4>3 Guys In A Pod Mobile App</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Light Copy Writing</p>
-              <h4>Wren Peak Graphic Design Responsive Website & Style Guide Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Copy Writing</p>
-                <p>HTML Coding</p>
-                <p>CSS Coding</p>
-                <p>JavaScript Coding</p>
-                <p>JQuery Coding</p>
-              <h4>Belvedere Vodka Web Ad</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Product Photography</p>
-              <h4>Organic Honey Xd Wireframe Website Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-                <p>Icon Design</p>
-              <h4>Little Grass Ranch Re-Brand</h4>
-                <p>Web Logo</p>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-              <h4>George R.R. Martin Xd Wireframe Website Design</h4>
-                <p>Creative Direction</p>
-                <p>Design Direction</p>
-              <h4>George R.R. Martin Existing Website Re-built to be Responsive</h4>
-                <p>HTML Coding</p>
-                <p>CSS Coding</p>
-            </div>
-          </div>
+        <div class="picGallery">
+            <img src="images/LaVieAds.png" onclick="showSlide(0)">
+            <img src="images/SueAd.png" onclick="showSlide(1)">
+            <img src="images/SueKitchen.png" onclick="showSlide(2)">
+            <img src="images/AA1.png" onclick="showSlide(3)">
+            <img src="images/BT1.png" onclick="showSlide(4)">
+            <img src="images/3guys1.png" onclick="showSlide(5)">
+            <img src="images/styleGuide.png" onclick="showSlide(6)">
+            <img src="images/webAd.png" onclick="showSlide(7)">
+            <img src="images/honey1.png" onclick="showSlide(8)">
+            <img src="images/honey2.png" onclick="showSlide(9)">
+            <img src="images/littleGrass.png" onclick="showSlide(10)">
+            <img src="images/GRRMmain.png" onclick="showSlide(11)">
+            <img src="images/GRRMbig.png" onclick="showSlide(12)">
+        </div>
       </section>
       <footer>
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
         <div id="popupContainer">
-
-          <input
-            type="button"
-            id="previous"
-            value="Previous"
-            onclick="showPreviousSlide()">
-          <input
-            type="button"
-            id="next"
-            value="Next"
-            onclick="showNextSlide()">
-
+          <div id="popupBackground" class="closePopup"></div>
+          <div id="popup">
+            <div id="slideshow">
+              <div class="slideshowImage">
+              <img src="images/LaVieAds.png">
+              <h4>La Vié Instagram Ad Campaign</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Logo Design</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/SueAd.png">
+              <h4>Sue’s Kitchen Instagram Ad Campaign</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Food Illustrations</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/SueKitchen.png">
+            </div>
+            <div class="slideshowImage">
+              <img src="images/AA1.png">
+              <h4>Alaskan Airlines – Educationally Re-Designed Mobile App</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Light Copy Writing</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/BT1.png">
+              <h4>Butterfly Thrive Mobile App Design</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/3guys1.png">
+              <h4>3 Guys In A Pod Mobile App</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Light Copy Writing</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/styleGuide.png">
+              <h4>Wren Peak Graphic Design Responsive Website & Style Guide Design</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Copy Writing</p>
+              <p>HTML Coding</p>
+              <p>CSS Coding</p>
+              <p>JavaScript Coding</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/webAd.png">
+              <h4>Belvedere Vodka Web Ad</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Product Photography</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/honey1.png">
+              <h4>Organic Honey Xd Wireframe Website Design</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+              <p>Icon Design</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/honey2.png">
+            </div>
+            <div class="slideshowImage">
+              <img src="images/littleGrass.png">
+              <h4>Little Grass Ranch Re-Brand</h4>
+              <p>Web Logo</p>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/GRRMmain.png">
+              <h4>George R.R. Martin Xd Wireframe Website Design</h4>
+              <p>Creative Direction</p>
+              <p>Design Direction</p>
+            </div>
+            <div class="slideshowImage">
+              <img src="images/GRRMbig.png">
+            </div>
+            <input
+              type="button"
+              id="previous"
+              value="Previous"
+              onclick="showPreviousSlide()">
+            <input
+              type="button"
+              id="next"
+              value="Next"
+              onclick="showNextSlide()">
+            </div>
+          </div>
         </div>
       </div>
-    <script type="text/javascript" src="../../js/slideshow.js"></script>
+    <script type="text/javascript" src="JS/slideshowGallery.js"></script>
   </body>
 </html>
