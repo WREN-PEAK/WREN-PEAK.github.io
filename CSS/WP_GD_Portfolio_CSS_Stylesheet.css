@@ -407,7 +407,8 @@ body {
 /* CSS for Mobile View */
 
 .content p {
-  line-height: 60%;
+  padding: 0;
+  line-height: 90%;
 }
 
 @media screen and (max-width: 480px) {
