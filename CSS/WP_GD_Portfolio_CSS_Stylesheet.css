@@ -490,6 +490,18 @@ opacity: 90%;
   outline: 0;
 }
 
+/* contact form button CSS */
+/* #contactFormButton {
+  background-color: #F8333C;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 23px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+#contactFormButton:focus-visible {
+  outline: 0;
+} */
 
 /* CSS for Mobile View */
 @media screen and (max-width: 480px) {
