@@ -441,9 +441,8 @@ opacity: 90%;
   z-index: 0;
 }
 #popup {
-  background-image: url("../../images/bells.png");
-  color: white;
-  padding: 36px;
+  /* color: white;
+  padding: 36px; */
   position: relative;
   text-align: center;
   min-width: 400px;
