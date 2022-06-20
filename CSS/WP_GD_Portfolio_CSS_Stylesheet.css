@@ -524,18 +524,20 @@ opacity: 90%;
   z-index: 0;
 }
 #contactPopup {
-  box-shadow: inset 20px 20px 12px #944311, inset -12px -12px 12px #161032;
   color: white;
   background-size: cover;
   padding: 100px 100px;
   position: relative;
-  box-shadow: 26px 26px 30px rgba(0,0,0,0.5);
   text-align: center;
   min-width: 400px;
   z-index: 1;
 }
+.contactPopupTrigger {
+  cursor: pointer;
+  color: #F8333C;
+}
 .container {
-  background-image: url(MBblue.png);
+  background-image: url("../images/MBblue.png");
   padding: 80px 70px;
   border-radius: 50px;
   Box-shadow: 10px 10px 6px #161032;
