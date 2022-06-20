@@ -2,6 +2,10 @@
 <html lang="en-US">
   <head>
     <title>WREN PEAK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montaga&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="CSS/WP_GD_Portfolio_CSS_Stylesheet.css" rel="stylesheet">
@@ -31,6 +35,7 @@
            <h5><a href="mailto:heidi.peak@students.first.edu">heidi.peak@students.first.edu</a></h5>
 
           <h3><a href="tel:+1-540-233-1239">540-233-1239</a></h3>
+          <div class="contactPopupTrigger"><h2>Click on me to open a popup</h2></div>
         </div>
         <div class="social">
           <h3>SOCIAL LINKS</h3>
@@ -54,5 +59,60 @@
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
     </div>
+    <div id="contactPopupContainer">
+      <div id="contactPopupBackground" class="closePopup"></div>
+      <div id="contactPopup">
+        <form action="submit_action.php">
+            <div class="container">
+              <div class="inputs">
+                <Label>FULL NAME</label>
+                <input type="text" name="fullName" placeholder="first and last name">
+                <label>EMAIL</label>
+                <input type="text" name="email" placeholder="example@gmail.com">
+                <label>MESSAGE</label>
+                <input type="text" name="message" placeholder="message me">
+              </div>
+              <div id="buttonCon">
+                <input type="submit" value="SUBMIT">
+              </div>
+              <div class="radioCon">
+                <div class="radioPair">
+                  <input type="radio" id="emailRadio" name="connect"
+                  value="email">
+                  <label for="emailRadio">
+                    Email Me
+                  </label>
+                </div>
+                <div class="radioPair">
+                  <input type="radio" id="callRadio" name="connect"
+                  value="call">
+                  <label for="callRadio">
+                    Call Me
+                </label>
+              </div>
+              <div class="radioPair">
+                <input type="radio" id="textRadio" name="connect"
+                value="text">
+                <label for="textRadio">
+                  Text Me
+                </label>
+              </div>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(".contactPopupTrigger").click(
+      function() {
+        $("#contactPopupContainer").addClass("popupOpen");
+      }
+      );
+      $(".closePopup").click(
+        function() {
+          $("#contactPopupContainer").removeClass("popupOpen");
+        }
+      );
+    </script>
   </body>
 </html>

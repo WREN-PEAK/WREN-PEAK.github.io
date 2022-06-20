@@ -491,7 +491,7 @@ opacity: 90%;
 }
 
 /* contact form button CSS */
-/* #contactFormButton {
+#contactFormButton {
   background-color: #F8333C;
   color: white;
   border: none;
@@ -501,7 +501,82 @@ opacity: 90%;
 }
 #contactFormButton:focus-visible {
   outline: 0;
-} */
+}
+#contactPopupContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: 'Anton', sans-serif;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#contactPopupContainer.popupOpen {
+  display: flex;
+}
+#contactPopupBackground {
+  background-color: #3B3E4F;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#contactPopup {
+  box-shadow: inset 20px 20px 12px #944311, inset -12px -12px 12px #161032;
+  color: white;
+  background-size: cover;
+  padding: 100px 100px;
+  position: relative;
+  box-shadow: 26px 26px 30px rgba(0,0,0,0.5);
+  text-align: center;
+  min-width: 400px;
+  z-index: 1;
+}
+.container {
+  background-image: url(MBblue.png);
+  padding: 80px 70px;
+  border-radius: 50px;
+  Box-shadow: 10px 10px 6px #161032;
+}
+.inputs input {
+  display: block;
+  width: 300px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  background: #68C5DB;
+  margin: 12px 0px;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #161032;
+}
+#buttonCon input:focus-visible {
+  outline: 0;
+}
+#buttonCon input {
+  font-family: 'Anton', sans-serif;
+  width: 300px;
+  padding: 16px;
+  margin: 20px 0px;
+  Border: 0;
+  border-radius: 50px;
+  background-color: #F8333C;
+  color: white;
+  font-size: 20px;
+  box-shadow: 4px 4px 6px #161032;
+}
+.radioPair {
+  display: inline-block;
+  margin: 0px 12px;
+}
+#radioCon {
+  text-align: center;
+}
 
 /* CSS for Mobile View */
 @media screen and (max-width: 480px) {
