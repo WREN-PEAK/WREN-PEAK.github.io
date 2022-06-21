@@ -652,6 +652,9 @@ opacity: 90%;
   .logo img {
     width: 140%;
   }
+  .contactPopupTrigger h4 {
+    padding: 12px;
+  }
   .social {
     z-index: 1;
     margin-top: 24px;
