@@ -621,6 +621,15 @@ opacity: 90%;
   width: 100%;
   height: auto;
 }
+.picGallery img {
+  width: 100%;
+  height: auto;
+}
+.picGallery {
+  height: auto;
+  width: 90vw;
+  transform: translateX(-2.5vw);
+}
 #previous {
   top: 24px;
   left: 50vw;
