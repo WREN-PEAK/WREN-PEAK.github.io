@@ -664,6 +664,27 @@ opacity: 90%;
   .contactPopupTrigger h4 {
     padding: 12px;
   }
+  /* newly added */
+  .container {
+    height: auto;
+    width: 95vw;
+    transform: translateX(-16vw);
+    margin: 6px;
+    padding: 6px;
+    box-shadow: none;
+  }
+  .inputs input {
+    width: 80vw;
+    /* transform: translateX(-20vw); */
+    margin: 20px;
+    padding: 20px;
+  }
+  #buttonCon input {
+    width: 80vw;
+    margin: 20px;
+    padding: 20px;
+  }
+
   .social {
     z-index: 1;
     margin-top: 24px;
