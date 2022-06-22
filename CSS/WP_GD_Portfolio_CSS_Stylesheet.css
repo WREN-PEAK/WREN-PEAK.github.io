@@ -523,7 +523,7 @@ opacity: 90%;
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 11;
 }
 #contactPopup {
   color: white;
@@ -532,7 +532,7 @@ opacity: 90%;
   position: relative;
   text-align: center;
   min-width: 400px;
-  z-index: 1;
+  z-index: 12;
 }
 .contactPopupTrigger {
   cursor: pointer;
@@ -546,7 +546,8 @@ opacity: 90%;
 }
 .inputs input {
   display: block;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   border: none;
   outline: none;
   /* color: black; */
@@ -576,7 +577,8 @@ opacity: 90%;
 }
 #buttonCon input {
   font-family: 'Anton', sans-serif;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   padding: 16px;
   margin: 20px 0px;
   Border: 0;
@@ -674,9 +676,9 @@ opacity: 90%;
   .container {
     height: auto;
     width: 95vw;
-    transform: translateX(-16vw);
+    /* transform: translateX(-16vw); */
     margin: 6px;
-    padding: 6px;
+    padding: 24px 6px;
     box-shadow: none;
   }
   .inputs input {
@@ -690,7 +692,10 @@ opacity: 90%;
     margin: 20px;
     padding: 20px;
   }
-
+  #contactPopup {
+    padding: 12px;
+    min-width: auto;
+  }
   .social {
     z-index: 1;
     margin-top: 24px;
