@@ -549,6 +549,7 @@ opacity: 90%;
   width: 300px;
   border: none;
   outline: none;
+  /* color: black; */
   box-sizing: border-box;
   background: #68C5DB;
   margin: 12px 0px;
@@ -564,6 +565,11 @@ opacity: 90%;
 }
 .inputs {
   Color: black;
+}
+.inputs input {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
 }
 #buttonCon input:focus-visible {
   outline: 0;
