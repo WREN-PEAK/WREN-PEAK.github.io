@@ -89,13 +89,11 @@ body {
 }
   /* TODO: need to set grid-area for header */
   #header {
-    /* TODO: fix image source url */
     background-image: url("hero.jpg");
     background-size: cover;
     padding: 100px 100px;
     text-align: center;
   }
-
 
 .banner1 {
    grid-area: banner1;
@@ -426,6 +424,7 @@ body {
     so that the footer links render in a column on mobile
   */
   #footer #footerItems {
+    flex-wrap: none;
     text-align: center;
   }
 
