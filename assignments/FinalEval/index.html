@@ -301,13 +301,17 @@
     </div>
     <script type="text/javascript">
       $('.navItem').hover(
-        function() {
-          // TODO: jQuery to add the 'navOpen' class to $(this) goes here
-        },
-        function() {
-          // TODO: jQuery to remove the 'navOpen' class to $(this) goes here
+
+        function onHover() {
+          $(this).addClass(".navItem");
         }
-      );
+
+        function offHover() {
+          $(this).removeClass(".navItem");
+        }
+
+        $(".navItem").hover(onHover, offHover);
+
     </script>
   </body>
 </html>
