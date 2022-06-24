@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #DDDDDD;
+  background-color: #b3efcb;
   font-family: ;
   margin: 0;
 }
@@ -25,7 +25,7 @@ body {
 }
   /* TODO: need to set grid-area for nav */
   #nav {
-    background-color: #BBBBBB;
+    background-color: #43ba72;
     display: flex;
     flex-direction: row;
   }
@@ -45,7 +45,7 @@ body {
 
   .navItem:hover,
   #navCtas a.navCta {
-    background-color: #999999;
+    background-color: #b3efcb;
     color: white;
   }
 
@@ -66,7 +66,7 @@ body {
 
   /* TODO: should be hidden by default */
   .navDropdown {
-    background-color: #999999;
+    background-color: #cff1e1;
     position: absolute;
     width: 200px;
   }
@@ -101,7 +101,7 @@ body {
 
   /* TODO: need to set grid-area for banner1 */
   #bannerItem1 {
-    border-right: 3px solid #666666;
+    border-right: 3px solid #3c644e;
   }
   .banner2 {
      grid-area: banner2;
@@ -122,7 +122,7 @@ body {
   #bannerItem1,
   #bannerItem2,
   #bannerItem3 {
-    background: linear-gradient(to bottom, #BBBBBB, #999999);
+    background: linear-gradient(to bottom, #0fb953, #159548;
     display: flex;
     flex-direction: column;
     padding: 12px 24px 36px 24px;
