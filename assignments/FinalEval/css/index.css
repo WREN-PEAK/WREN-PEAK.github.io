@@ -45,7 +45,7 @@ body {
 
   .navItem:hover,
   #navCtas a.navCta {
-    background-color: #b3efcb;
+    background-color: #05622a;
     color: white;
   }
 
@@ -66,7 +66,7 @@ body {
 
   /* TODO: should be hidden by default */
   .navDropdown {
-    background-color: #cff1e1;
+    background-color: #10814c;
     position: absolute;
     width: 200px;
   }
@@ -116,7 +116,7 @@ body {
 
   /* TODO: need to set grid-area for banner3 */
   #bannerItem3 {
-    border-left: 3px solid #666666;
+    border-left: 3px solid #055021;
   }
 
   #bannerItem1,
@@ -135,14 +135,14 @@ body {
 
   /* TODO: need to add hover behavior for links */
   .bannerActions a {
-    background-color: #999999;
+    background-color: #0fb953;
     color: white;
     display: inline-block;
     padding: 12px;
     text-decoration: none;
   }
   a.socialMediaLink {
-    background-color: #999999;
+    background-color: #0fb953;
     display: inline-block;
     padding: 6px;
   }
@@ -181,21 +181,21 @@ body {
   */
   #shopGrid .shopItemCard {
     flex-basis: 22%;
-    background-color: #999999;
+    background-color: #0fb953;
     margin-bottom: 24px;
     padding: 12px;
   }
 
   #shopGrid .shopItemCard .shopItemImage {
-    background-color: #BBBBBB;
-    border: 1px solid #999999;
+    background-color: #84c3a1;
+    border: 1px solid #0fb953;
     display: block;
     height: 100px;
     width: 100%;
   }
 
   #shopGrid .shopItemCard .shopItemBadge {
-    background-color: #BBBBBB;
+    background-color: #84c3a1;
     border-radius: 4px;
     display: inline-block;
     font-size: 12px;
@@ -225,8 +225,8 @@ body {
   }
 
   #blog .blogPost .blogPostImage {
-    background-color: #BBBBBB;
-    border: 4px solid #999999;
+    background-color: #84c3a1;
+    border: 4px solid #0fb953;
     flex: 2;
     height: 350px;
   }
@@ -264,8 +264,8 @@ body {
 
   /* TODO: need to set grid-area for footer */
   #footer {
-    background: linear-gradient(to bottom, #BBBBBB, #999999);
-    border-right: 3px solid #666666;
+    background: linear-gradient(to bottom, #0fb953, #159548);
+    border-right: 3px solid #0fb953;
     padding: 48px 24px 24px 24px;
   }
 
@@ -292,7 +292,7 @@ body {
 
   /* TODO: need to set grid-area for footerSocial */
   #footerSocialMedia {
-    background: linear-gradient(to bottom, #BBBBBB, #999999);
+    background: linear-gradient(to bottom, #0fb953, #159548);
     padding: 24px;
   }
 
@@ -302,7 +302,7 @@ body {
 
   /* TODO: need to set grid-area for copyright */
   #copyright {
-    background-color: #666666;
+    background-color: #08512a;
     color: white;
     font-size: 12px;
     padding: 24px;
