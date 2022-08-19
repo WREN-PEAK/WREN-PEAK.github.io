@@ -577,6 +577,18 @@ opacity: 90%;
 #radioCon {
   text-align: center;
 }
+.easterEgg {
+  position: absolute;
+  display: none;
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+  z-index: 15;
+}
+.easterEgg.activated {
+  display: block;
+}
 
 /* CSS for Mobile View */
 @media screen and (max-width: 480px) {

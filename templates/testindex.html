@@ -19,7 +19,7 @@
         <img src="images/wpgd-banner-font.png" alt="wren peak graphic designer">
       </header>
       <section>
-        <img src="images/FOL-LOGO.png" alt="wren peak logo phoenix-peacock">
+        <img id="easterEggTrigger" src="images/FOL-LOGO.png" alt="wren peak logo phoenix-peacock">
         <div id="quadContainer">
           <div id="yellowQuad">
             <a href="gallery-Graphic.html">
@@ -52,5 +52,21 @@
         <p class="copyright">© 2022 created by Wren Peak. All Rights Reserved.</p>
       </footer>
     </div>
+    <video id="easterEggVideo" class="easterEgg">
+        <source src="video/LogoEffectsComposition2.mp4" type="video/mp4">
+    </video>
+    <script type="text/javascript">
+      let trigger = document.getElementById("easterEggTrigger");
+      let video = document.getElementById("easterEggVideo");
+
+      trigger.onclick = function(e) {
+        video.classList.add("activated");
+        video.play();
+      };
+
+      video.onended = function(e) {
+        video.classList.remove("activated");
+      };
+    </script>
   </body>
 </html>
